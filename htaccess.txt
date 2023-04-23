@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Zugriff auf geschützten Bereich"
+AuthGroupFile /volume1/web2/wdr/LokD/.htpasswd
+require user LokDReporter

@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <title>LokD - Krankenhäuser</title>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e40c922a7b58d75b0b1c1080707415ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e40c922a7b58d75b0b1c1080707415ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e40c922a7b58d75b0b1c1080707415ab = L.map(
+                "map_e40c922a7b58d75b0b1c1080707415ab",
+                {
+                    center: [51.2418431, 6.6907935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c6c1271b1b99eb28d1507dfdcf46c3e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var tile_layer_54986c78868a8a7b8d00be13d183dd09 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var tile_layer_e92be42ee5f440957fca529b3e6ba5c6 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var layer_control_d76609dc612432f3fe093b762bb31d97 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9c6c1271b1b99eb28d1507dfdcf46c3e,
+                    "Google Satellite" : tile_layer_54986c78868a8a7b8d00be13d183dd09,
+                    "Google Satellite Hybrid" : tile_layer_e92be42ee5f440957fca529b3e6ba5c6,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d76609dc612432f3fe093b762bb31d97.base_layers,
+                layer_control_d76609dc612432f3fe093b762bb31d97.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+            tile_layer_54986c78868a8a7b8d00be13d183dd09.remove();
+            tile_layer_e92be42ee5f440957fca529b3e6ba5c6.remove();
+        
+    
+            var marker_862c188d035e69cf0579f4983b0aa323 = L.marker(
+                [51.2338257, 6.820827299999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_db56b58bca495eb826157f4585bf6851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_862c188d035e69cf0579f4983b0aa323.setIcon(icon_db56b58bca495eb826157f4585bf6851);
+        
+    
+        var popup_ed57fdf700382a2c26cdc09912f7e24f = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_7a8f73efd78f596ff9293e16f7760b80 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbGxnZW1laW5rcmFua2VuaGF1cyA8L2I+PGJyLz5MdWlzZW5rcmFua2VuaGF1cyA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjExLTQ0NzczMzAwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly9sdWlzZW5rcmFua2VuaGF1cy5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEx1aXNlLVJhaW5lci1TdHIuIDYtMTAgRMO8c3NlbGRvcmYgNDAyMzUgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBVbnRlcm5laG1lbiA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiAxMDAgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gMTAwIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_ed57fdf700382a2c26cdc09912f7e24f.setContent(i_frame_7a8f73efd78f596ff9293e16f7760b80);
+            
+        
+
+        marker_862c188d035e69cf0579f4983b0aa323.bindPopup(popup_ed57fdf700382a2c26cdc09912f7e24f)
+        ;
+
+        
+    
+    
+            marker_862c188d035e69cf0579f4983b0aa323.bindTooltip(
+                `<div>
+                     Allgemeinkrankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf536ac80f83eea60efba0facd50f994 = L.marker(
+                [51.1972531, 6.792192399999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_a5287012d0dfbf1816357f94fea9d319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_bf536ac80f83eea60efba0facd50f994.setIcon(icon_a5287012d0dfbf1816357f94fea9d319);
+        
+    
+        var popup_2fcfab63510832f60bc179c89bd13f5e = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_e7b381d6f6e07370fdbb6e150b60031e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Vbml2ZXJzaXTDpHRza2xpbmlrdW0gPC9iPjxici8+VW5pdmVyc2l0w6R0c2tsaW5pa3VtIETDvHNzZWxkb3JmIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTEvODEtMDAgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy51bmlrbGluaWstZHVlc3NlbGRvcmYuZGUgPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBNb29yZW5zdHIuIDUgRMO8c3NlbGRvcmYgNDAyMjUgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBVbml2ZXJzaXTDpHRza2xpbmlrdW0gRMO8c3NlbGRvcmYgPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMTM4NyA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBBdWdlbmhlaWxrdW5kZSgzMiksQ2hpcnVyZ2llKDMxNCksRnJhdWVuaGVpbGt1bmRlIHVuZCBHZWJ1cnRzaGlsZmUoNzUpLEdlcmlhdHJpZSgzMCksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSgzMyksSGF1dC1HZXNjaGxlY2h0c2tyYW5raGVpdGVuKDY0KSxIZXJ6Y2hpcnVyZ2llKDg0KSxJbm5lcmUgTWVkaXppbigzODMpLEtpbmRlci0gdW5kIEp1Z2VuZG1lZGl6aW4oMTE2KSxNS0ctQ2hpcnVyZ2llKDMyKSxOZXVyb2NoaXJ1cmdpZSg4MSksTmV1cm9sb2dpZSg3MiksTnVrbGVhcm1lZGl6aW4oVGhlcmFwaWUpKDEwKSxTdHJhaGxlbnRoZXJhcGllKDI2KSxVcm9sb2dpZSgzNSkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_2fcfab63510832f60bc179c89bd13f5e.setContent(i_frame_e7b381d6f6e07370fdbb6e150b60031e);
+            
+        
+
+        marker_bf536ac80f83eea60efba0facd50f994.bindPopup(popup_2fcfab63510832f60bc179c89bd13f5e)
+        ;
+
+        
+    
+    
+            marker_bf536ac80f83eea60efba0facd50f994.bindTooltip(
+                `<div>
+                     Universitätsklinikum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22bffadc857478f37223244ccb9cc82d = L.marker(
+                [51.2449597, 6.855836699999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_5908a97f0dc4d641543215ee159dd3e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_22bffadc857478f37223244ccb9cc82d.setIcon(icon_5908a97f0dc4d641543215ee159dd3e0);
+        
+    
+        var popup_e85f7bf2fdd9fdb0fc4d4cd69b85c8c7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_6013472447ff0d28b2278caa2c9a88b1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmFua2VuaGF1cyBHZXJyZXNoZWltIDwvYj48YnIvPlNhbmEgS2xpbmlrZW4gRMO8c3NlbGRvcmYgR21iSCA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjExMjgwMC0wMSA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnNhbmEtZHVlc3NlbGRvcmYuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gR3LDpHVsaW5nZXIgU3RyLiAxMjAgRMO8c3NlbGRvcmYgNDA2MjUgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBTYW5hIEtsaW5pa2VuIETDvHNzZWxkb3JmIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNDkwIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxOTIpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDU4KSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDUpLElubmVyZSBNZWRpemluKDIyNSksS2luZGVyLSB1bmQgSnVnZW5kbWVkaXppbigxMCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_e85f7bf2fdd9fdb0fc4d4cd69b85c8c7.setContent(i_frame_6013472447ff0d28b2278caa2c9a88b1);
+            
+        
+
+        marker_22bffadc857478f37223244ccb9cc82d.bindPopup(popup_e85f7bf2fdd9fdb0fc4d4cd69b85c8c7)
+        ;
+
+        
+    
+    
+            marker_22bffadc857478f37223244ccb9cc82d.bindTooltip(
+                `<div>
+                     Krankenhaus Gerresheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44a096d23a3c2b45c232b60c5e78f041 = L.marker(
+                [51.1524482, 6.870824],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_259d64dabed381984a91535a6bacbff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_44a096d23a3c2b45c232b60c5e78f041.setIcon(icon_259d64dabed381984a91535a6bacbff0);
+        
+    
+        var popup_0f944eff654e0843e18063a7168a9cc3 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ebe6683f47f13f3f1d34b97459eb1192 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmFua2VuaGF1cyBCZW5yYXRoIDwvYj48YnIvPlNhbmEgS2xpbmlrZW4gRMO8c3NlbGRvcmYgR21iSCA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjExMjgwMC0wMSA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnNhbmEtZHVlc3NlbGRvcmYuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gVXJkZW5iYWNoZXIgQWxsZWUgODMgRMO8c3NlbGRvcmYgNDA1OTMgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBTYW5hIEtsaW5pa2VuIETDvHNzZWxkb3JmIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNDkwIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxOTIpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDU4KSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDUpLElubmVyZSBNZWRpemluKDIyNSksS2luZGVyLSB1bmQgSnVnZW5kbWVkaXppbigxMCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_0f944eff654e0843e18063a7168a9cc3.setContent(i_frame_ebe6683f47f13f3f1d34b97459eb1192);
+            
+        
+
+        marker_44a096d23a3c2b45c232b60c5e78f041.bindPopup(popup_0f944eff654e0843e18063a7168a9cc3)
+        ;
+
+        
+    
+    
+            marker_44a096d23a3c2b45c232b60c5e78f041.bindTooltip(
+                `<div>
+                     Krankenhaus Benrath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efd29650bb82921911d38045752fd246 = L.marker(
+                [51.2665093, 6.8247428],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_5abb87f17677ead2cc140bc2bf023145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_efd29650bb82921911d38045752fd246.setIcon(icon_5abb87f17677ead2cc140bc2bf023145);
+        
+    
+        var popup_094de5b708d0ebb13cca3b4fbd681b65 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9ddfe9c99d4c2e82e4d101f4b942bed7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BdWd1c3RhLUtyYW5rZW5oYXVzIDwvYj48YnIvPktyYW5rZW5oYXVzIE3DtnJzZW5icm9pY2gtUmF0aCBHbWJIIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjExKTkwNDMtNjAxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cudmtrZC1rbGluaWtlbi5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEFtYWxpZW5zdHIuIDkgRMO8c3NlbGRvcmYgNDA0NzIgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBLcmFua2VuaGF1cyBNw7Zyc2VuYnJvaWNoIC0gUmF0aCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDUzNCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoMjI1KSxHZXJpYXRyaWUoNjApLElubmVyZSBNZWRpemluKDE5MyksUHN5Y2hpYXRyaWUgdW5kIFBzeWNob3RoZXJhcGllLCBQc3ljaG9zb21hdGlzY2hlIE1lZGl6aW4gdW5kIFBzeWNob3RoZXJhcGllKDU2KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_094de5b708d0ebb13cca3b4fbd681b65.setContent(i_frame_9ddfe9c99d4c2e82e4d101f4b942bed7);
+            
+        
+
+        marker_efd29650bb82921911d38045752fd246.bindPopup(popup_094de5b708d0ebb13cca3b4fbd681b65)
+        ;
+
+        
+    
+    
+            marker_efd29650bb82921911d38045752fd246.bindTooltip(
+                `<div>
+                     Augusta-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9b4bc25cc0edebc13e818fdf0543464 = L.marker(
+                [51.2990918, 6.7337163],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_ccf935522bde86c40d9e4c7156f82eec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c9b4bc25cc0edebc13e818fdf0543464.setIcon(icon_ccf935522bde86c40d9e4c7156f82eec);
+        
+    
+        var popup_2b5807a801aee40a6775d51c1b741848 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_2a6915ac573f3723d206a4639f06a928 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5NYXJpZW4tS3JhbmtlbmhhdXMgPC9iPjxici8+S3JhbmtlbmhhdXMgTcO2cnNlbmJyb2ljaC1SYXRoIEdtYkggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTEpOTA0My02MDEgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy52a2tkLWtsaW5pa2VuLmRlIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gQW4gU3QuIFN3aWRiZXJ0IETDvHNzZWxkb3JmIDQwNDg5IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gS3JhbmtlbmhhdXMgTcO2cnNlbmJyb2ljaCAtIFJhdGggR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA1MzQgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDIyNSksR2VyaWF0cmllKDYwKSxJbm5lcmUgTWVkaXppbigxOTMpLFBzeWNoaWF0cmllIHVuZCBQc3ljaG90aGVyYXBpZSwgUHN5Y2hvc29tYXRpc2NoZSBNZWRpemluIHVuZCBQc3ljaG90aGVyYXBpZSg1NikgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_2b5807a801aee40a6775d51c1b741848.setContent(i_frame_2a6915ac573f3723d206a4639f06a928);
+            
+        
+
+        marker_c9b4bc25cc0edebc13e818fdf0543464.bindPopup(popup_2b5807a801aee40a6775d51c1b741848)
+        ;
+
+        
+    
+    
+            marker_c9b4bc25cc0edebc13e818fdf0543464.bindTooltip(
+                `<div>
+                     Marien-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_326c98cbd4cd5595a498c7daa04f3b70 = L.marker(
+                [51.1744983, 6.8249774],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_2f7ba11764df53bf81f88837ea589f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_326c98cbd4cd5595a498c7daa04f3b70.setIcon(icon_2f7ba11764df53bf81f88837ea589f04);
+        
+    
+        var popup_d7d2216c9e2b98072ce688a8fda359e1 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_1ccbddb3c373a79e7616327430c4deee = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HZXJpYXRyaXNjaGVzIEtyYW5rZW5oYXVzIEVsYnJvaWNoIDwvYj48YnIvPktyYW5rZW5oYXVzIE3DtnJzZW5icm9pY2gtUmF0aCBHbWJIIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjExKTkwNDMtNjAxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cudmtrZC1rbGluaWtlbi5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEFtIEZhbGRlciA2IETDvHNzZWxkb3JmIDQwNTg5IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gS3JhbmtlbmhhdXMgTcO2cnNlbmJyb2ljaCAtIFJhdGggR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA1MzQgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDIyNSksR2VyaWF0cmllKDYwKSxJbm5lcmUgTWVkaXppbigxOTMpLFBzeWNoaWF0cmllIHVuZCBQc3ljaG90aGVyYXBpZSwgUHN5Y2hvc29tYXRpc2NoZSBNZWRpemluIHVuZCBQc3ljaG90aGVyYXBpZSg1NikgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_d7d2216c9e2b98072ce688a8fda359e1.setContent(i_frame_1ccbddb3c373a79e7616327430c4deee);
+            
+        
+
+        marker_326c98cbd4cd5595a498c7daa04f3b70.bindPopup(popup_d7d2216c9e2b98072ce688a8fda359e1)
+        ;
+
+        
+    
+    
+            marker_326c98cbd4cd5595a498c7daa04f3b70.bindTooltip(
+                `<div>
+                     Geriatrisches Krankenhaus Elbroich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7424a50d417c1d81ee1e2cb16806adb8 = L.marker(
+                [51.2429511, 6.7905903],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_0a0e3ef9218e7f4d5e54f494063f06c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7424a50d417c1d81ee1e2cb16806adb8.setIcon(icon_0a0e3ef9218e7f4d5e54f494063f06c1);
+        
+    
+        var popup_f7062ac74a81445038a1ad5c5adb1215 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_6c2815607728549c2cbf560ef153b5ca = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gVmluemVuei1LcmFua2VuaGF1cyA8L2I+PGJyLz5LcmFua2VuaGF1cyBNw7Zyc2VuYnJvaWNoLVJhdGggR21iSCA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxMSk5MDQzLTYwMSA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnZra2Qta2xpbmlrZW4uZGUgPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBTY2hsb8Ofc3RyLiA4NSBEw7xzc2VsZG9yZiA0MDQ3NyA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEtyYW5rZW5oYXVzIE3DtnJzZW5icm9pY2ggLSBSYXRoIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNTM0IDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgyMjUpLEdlcmlhdHJpZSg2MCksSW5uZXJlIE1lZGl6aW4oMTkzKSxQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoNTYpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_f7062ac74a81445038a1ad5c5adb1215.setContent(i_frame_6c2815607728549c2cbf560ef153b5ca);
+            
+        
+
+        marker_7424a50d417c1d81ee1e2cb16806adb8.bindPopup(popup_f7062ac74a81445038a1ad5c5adb1215)
+        ;
+
+        
+    
+    
+            marker_7424a50d417c1d81ee1e2cb16806adb8.bindTooltip(
+                `<div>
+                     St. Vinzenz-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c081f704c5ae970ef77648f91026ab6 = L.marker(
+                [51.2314763, 6.7278308],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_f7f8a150d58320edb73a6f9ae6bcd02d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_6c081f704c5ae970ef77648f91026ab6.setIcon(icon_f7f8a150d58320edb73a6f9ae6bcd02d);
+        
+    
+        var popup_d003023d565d2749bcb6c88efe27b1ff = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c918b20e385622804c0e597892f5eafa = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Eb21pbmlrdXMtS3JhbmtlbmhhdXMgPC9iPjxici8+U2Now7ZuIEtsaW5payBEw7xzc2VsZG9yZiA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxMSk1NjctMCA8YnIvPjxiPldlYjo8L2I+PGVtPiB3d3cuc2Nob2VuLWtsaW5pa2VuLmRlIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gQW0gSGVlcmR0ZXIgS3JhbmtlbmhhdXMgMiBEw7xzc2VsZG9yZiA0MDU0OSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IFNjaMO2biBLbGluaWsgRMO8c3NlbGRvcmYgU0UgJiBDby4gS0cgPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMjAyIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSg3NyksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSg0MCksSW5uZXJlIE1lZGl6aW4oODUpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_d003023d565d2749bcb6c88efe27b1ff.setContent(i_frame_c918b20e385622804c0e597892f5eafa);
+            
+        
+
+        marker_6c081f704c5ae970ef77648f91026ab6.bindPopup(popup_d003023d565d2749bcb6c88efe27b1ff)
+        ;
+
+        
+    
+    
+            marker_6c081f704c5ae970ef77648f91026ab6.bindTooltip(
+                `<div>
+                     Dominikus-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ef5cf8b21324c3f1ebe431c1e3df163 = L.marker(
+                [51.2117037, 6.7607784],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_ff6a8603e08a629a0f05d34743f2c2d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4ef5cf8b21324c3f1ebe431c1e3df163.setIcon(icon_ff6a8603e08a629a0f05d34743f2c2d2);
+        
+    
+        var popup_72d54ec5075ded18b451c372dbabc34a = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b1c63f5b912c429d1709a4fc4188aab8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gTWFydGludXMtS3JhbmtlbmhhdXMgPC9iPjxici8+U3QuIE1hcnRpbnVzLUtyYW5rZW5oYXVzIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTEtOTE3MCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3Lm1hcnRpbnVzLWR1ZXNzZWxkb3JmLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEdsYWRiYWNoZXIgU3RyLiAyNiBEw7xzc2VsZG9yZiA0MDIxOSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEthdGhhcmluYSBLYXNwZXIgVmlhU2FsdXMgR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiAyMDkgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQXVnZW5oZWlsa3VuZGUoMjMpLENoaXJ1cmdpZSgzNyksR2VyaWF0cmllKDk2KSxJbm5lcmUgTWVkaXppbig1MykgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_72d54ec5075ded18b451c372dbabc34a.setContent(i_frame_b1c63f5b912c429d1709a4fc4188aab8);
+            
+        
+
+        marker_4ef5cf8b21324c3f1ebe431c1e3df163.bindPopup(popup_72d54ec5075ded18b451c372dbabc34a)
+        ;
+
+        
+    
+    
+            marker_4ef5cf8b21324c3f1ebe431c1e3df163.bindTooltip(
+                `<div>
+                     St. Martinus-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15f2733bfd34d9d798e39bf73e96a0bd = L.marker(
+                [51.23596999999999, 6.784689999999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_7fcfd267b58382e4cf2ec3183aa2125d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_15f2733bfd34d9d798e39bf73e96a0bd.setIcon(icon_7fcfd267b58382e4cf2ec3183aa2125d);
+        
+    
+        var popup_062d5e91f60ed874465d1ae766b660bc = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c3872299191b1cc16ccc1327ee7003c0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5NYXJpZW4gLSBIb3NwaXRhbCA8L2I+PGJyLz5NYXJpZW4gLSBIb3NwaXRhbCA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxMSk0NDAwMjIwMiA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3Lm1hcmllbi1ob3NwaXRhbC5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBSb2NodXNzdHJhw59lIDIgRMO8c3NlbGRvcmYgNDA0NzkgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBNYXJpZW4gLSBIb3NwaXRhbCBEw7xzc2VsZG9yZiBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDM0OCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBBdWdlbmhlaWxrdW5kZSgxOCksQ2hpcnVyZ2llKDU1KSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSgzOCksSW5uZXJlIE1lZGl6aW4oMTUyKSxOZXVyb2xvZ2llKDUyKSxTdHJhaGxlbnRoZXJhcGllKDEwKSxVcm9sb2dpZSgyMykgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_062d5e91f60ed874465d1ae766b660bc.setContent(i_frame_c3872299191b1cc16ccc1327ee7003c0);
+            
+        
+
+        marker_15f2733bfd34d9d798e39bf73e96a0bd.bindPopup(popup_062d5e91f60ed874465d1ae766b660bc)
+        ;
+
+        
+    
+    
+            marker_15f2733bfd34d9d798e39bf73e96a0bd.bindTooltip(
+                `<div>
+                     Marien - Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22e2af056557a1bd965579cf546b640 = L.marker(
+                [51.30060539999999, 6.7488177],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_e459a03f2a3ff96054816df848415dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e22e2af056557a1bd965579cf546b640.setIcon(icon_e459a03f2a3ff96054816df848415dc3);
+        
+    
+        var popup_d4cf06660e4d6e26e5a6181548d7a770 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_7a5abaf478c9ba60a395ad06c5071041 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5GbG9yZW5jZS1OaWdodGluZ2FsZS1LcmFua2VuaGF1cyA8L2I+PGJyLz5LcmFua2VuYW5zdGFsdGVuIEZsb3JlbmNlIE5pZ2h0aW5nYWxlIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTE0MDkzMzI3IDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cua2Fpc2Vyc3dlcnRoZXItZGlha29uaWUuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gS3JldXpiZXJnc3RyLiA3OSBEw7xzc2VsZG9yZiA0MDQ4OSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEthaXNlcnN3ZXJ0aGVyIERpYWtvbmllIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDUyMSA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoMTE0KSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSg3NSksSW5uZXJlIE1lZGl6aW4oMjA3KSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDQ1KSxQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoODApIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_d4cf06660e4d6e26e5a6181548d7a770.setContent(i_frame_7a5abaf478c9ba60a395ad06c5071041);
+            
+        
+
+        marker_e22e2af056557a1bd965579cf546b640.bindPopup(popup_d4cf06660e4d6e26e5a6181548d7a770)
+        ;
+
+        
+    
+    
+            marker_e22e2af056557a1bd965579cf546b640.bindTooltip(
+                `<div>
+                     Florence-Nightingale-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_634033f40bebf8c4b7a819ccf71a16bc = L.marker(
+                [51.2130058, 6.7730602],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_21ac4167bdd3923f807fd3ec96769bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_634033f40bebf8c4b7a819ccf71a16bc.setIcon(icon_21ac4167bdd3923f807fd3ec96769bcd);
+        
+    
+        var popup_627505aaa224da0a2cef092f1651e000 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_be6da63b52bd90dc236018b6d94454c7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5FdmFuZ2VsaXNjaGVzIEtyYW5rZW5oYXVzIDwvYj48YnIvPkV2YW5nZWxpc2NoZXMgS3JhbmtlbmhhdXMgPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTEpOTE5LTAgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5ldmstZHVlc3NlbGRvcmYuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gS2lyY2hmZWxkc3RyYcOfZSA0MCBEw7xzc2VsZG9yZiA0MDIxNyA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IFN0aWZ0dW5nIEV2YW5nZWxpc2NoZXMgS3JhbmtlbmhhdXMgPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNTEzIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxMTMpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDcwKSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDQ3KSxIYXV0LUdlc2NobGVjaHRza3JhbmtoZWl0ZW4oMjApLElubmVyZSBNZWRpemluKDE5NiksS2luZGVyLSB1bmQgSnVnZW5kbWVkaXppbig1NSksU3RyYWhsZW50aGVyYXBpZSgxMikgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_627505aaa224da0a2cef092f1651e000.setContent(i_frame_be6da63b52bd90dc236018b6d94454c7);
+            
+        
+
+        marker_634033f40bebf8c4b7a819ccf71a16bc.bindPopup(popup_627505aaa224da0a2cef092f1651e000)
+        ;
+
+        
+    
+    
+            marker_634033f40bebf8c4b7a819ccf71a16bc.bindTooltip(
+                `<div>
+                     Evangelisches Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe1da861ecc0132aa259135923ee5d22 = L.marker(
+                [51.2541533, 6.7594841],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_3707465d4659212d895654737c3ee523 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fe1da861ecc0132aa259135923ee5d22.setIcon(icon_3707465d4659212d895654737c3ee523);
+        
+    
+        var popup_06561ae793c69fce0aecc18ad8f9d436 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9af585cf73ffc1de2e14b63489196e5d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5QYXJhY2Vsc3VzLUtsaW5payBHb2x6aGVpbSA8L2I+PGJyLz5QYXJhY2Vsc3VzLUtsaW5payAgR29semhlaW0gPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTEpNDM4NjAgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5wYXJhY2Vsc3VzLWtsaW5pa2VuLmNvbS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBGcmllZHJpY2gtTGF1LVN0ci4gMTEgRMO8c3NlbGRvcmYgNDA0NzQgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBQYXJhY2Vsc3VzLUtsaW5pa2VuIERldXRzY2hsYW5kIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gODQgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gVXJvbG9naWUoODQpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_06561ae793c69fce0aecc18ad8f9d436.setContent(i_frame_9af585cf73ffc1de2e14b63489196e5d);
+            
+        
+
+        marker_fe1da861ecc0132aa259135923ee5d22.bindPopup(popup_06561ae793c69fce0aecc18ad8f9d436)
+        ;
+
+        
+    
+    
+            marker_fe1da861ecc0132aa259135923ee5d22.bindTooltip(
+                `<div>
+                     Paracelsus-Klinik Golzheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70eb43047acc2237c4c3cb67aee62d1e = L.marker(
+                [51.2418431, 6.8449084],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_40b9c05eec2487c80883b43320a8d019 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_70eb43047acc2237c4c3cb67aee62d1e.setIcon(icon_40b9c05eec2487c80883b43320a8d019);
+        
+    
+        var popup_5cddaf730f5f7ba0ecf45374649e8459 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_36200af4c2f6345fbdeb76d6d1a5cdb3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MVlJfS2xpbmlrdW0gRMO8c3NlbGRvcmYgLSBLbGluaWtlbiBkZXIgSGVpbnJpY2gtSGVpbmUtVW5pdmVyc2l0w6R0IC0gPC9iPjxici8+TFZSLSBLbGluaWt1bSBEw7xzc2VsZG9yZiAtS2xpbmlrZW4gZGVyIEhlaW5yaWNoLUhlaW5lLVVuaXZlcnNpdMOkdCAtIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTEtODA5Njk5NiA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnJrLWR1ZXNzZWxkb3JmLmx2ci5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBCZXJnaXNjaGUgTGFuZHN0ci4gMiBEw7xzc2VsZG9yZiA0MDYyOSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IERpcmVrdG9yaW4gZGVzIExhbmRzY2hhZnRzdmVyYmFuZGVzIFJoZWlubGFuZCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA0ODMgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gS2luZGVyLSB1bmQgSnVnZW5kcHN5Y2hpYXRyaWUgdW5kIC1wc3ljaG90aGVyYXBpZSg1MiksTmV1cm9sb2dpZSgzNiksUHN5Y2hpYXRyaWUgdW5kIFBzeWNob3RoZXJhcGllLCBQc3ljaG9zb21hdGlzY2hlIE1lZGl6aW4gdW5kIFBzeWNob3RoZXJhcGllKDM5NSkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_5cddaf730f5f7ba0ecf45374649e8459.setContent(i_frame_36200af4c2f6345fbdeb76d6d1a5cdb3);
+            
+        
+
+        marker_70eb43047acc2237c4c3cb67aee62d1e.bindPopup(popup_5cddaf730f5f7ba0ecf45374649e8459)
+        ;
+
+        
+    
+    
+            marker_70eb43047acc2237c4c3cb67aee62d1e.bindTooltip(
+                `<div>
+                     LVR_Klinikum Düsseldorf - Kliniken der Heinrich-Heine-Universität -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18a1783f510ad3beaeb92ee684991833 = L.marker(
+                [51.1643624, 6.8639733],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_e9af82d520e01bb7e4c79385daef0a12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_18a1783f510ad3beaeb92ee684991833.setIcon(icon_e9af82d520e01bb7e4c79385daef0a12);
+        
+    
+        var popup_adf433bac53e9c9255449d9d61ad803c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_8d77f04bf9d6efe0c1b9c778364e0201 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Kb2hhbm5pdGVyLVRhZ2Vza2xpbmlrIETDvHNzZWxkb3JmIGdHbWJIIDwvYj48YnIvPkpvaGFubml0ZXIgVGFnZXNrbGluaWsgRMO8c3NlbGRvcmYgZ0dtYkggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMTcwMzAwOCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3Lmp0ay1kdWVzc2VsZG9yZi5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IE1hcmJhY2hlciBTdHIuNzktODEgRMO8c3NlbGRvcmYgNDA1OTcgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBSaGVpbmlzY2hlIEdlbm9zc2Vuc2NoYWZ0IGRlcyBKb2hhbm5pdGVyb3JkZW5zIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEwMCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiAxMDAgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_adf433bac53e9c9255449d9d61ad803c.setContent(i_frame_8d77f04bf9d6efe0c1b9c778364e0201);
+            
+        
+
+        marker_18a1783f510ad3beaeb92ee684991833.bindPopup(popup_adf433bac53e9c9255449d9d61ad803c)
+        ;
+
+        
+    
+    
+            marker_18a1783f510ad3beaeb92ee684991833.bindTooltip(
+                `<div>
+                     Johanniter-Tagesklinik Düsseldorf gGmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca5e33f2bb2f9641d069e381c71f9cff = L.marker(
+                [51.3206668, 6.5661732],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_31b2e51c998bd0ec261e309c07b99076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ca5e33f2bb2f9641d069e381c71f9cff.setIcon(icon_31b2e51c998bd0ec261e309c07b99076);
+        
+    
+        var popup_54c30eedec44d98ea00e133c666df9f6 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a9985fe5b10bd5d0e6c6fd30f0292ef6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LbGluaWt1bSBLcmVmZWxkIDwvYj48YnIvPkhFTElPUyBLbGluaWt1bSBLcmVmZWxkIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE1MSkzMjI5MTMgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5rbGluaWt1bS1rcmVmZWxkLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEx1dGhlcnBsYXR6IDQwIEtyZWZlbGQgNDc4MDUgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBIRUxJT1MgS2xpbmlrdW0gS3JlZmVsZCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEyMjcgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQXVnZW5oZWlsa3VuZGUoNTIpLENoaXJ1cmdpZSgyODcpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDkzKSxHZXJpYXRyaWUoNTgpLEhhbHMtTmFzZW4tT2hyZW5oZWlsa3VuZGUoNjUpLEhhdXQtR2VzY2hsZWNodHNrcmFua2hlaXRlbigzOCksSGVyemNoaXJ1cmdpZSg0NSksSW5uZXJlIE1lZGl6aW4oMzQzKSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDEwNCksTmV1cm9jaGlydXJnaWUoNDMpLE5ldXJvbG9naWUoNTEpLE51a2xlYXJtZWRpemluKFRoZXJhcGllKSg4KSxTdHJhaGxlbnRoZXJhcGllKDEwKSxVcm9sb2dpZSgzMCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_54c30eedec44d98ea00e133c666df9f6.setContent(i_frame_a9985fe5b10bd5d0e6c6fd30f0292ef6);
+            
+        
+
+        marker_ca5e33f2bb2f9641d069e381c71f9cff.bindPopup(popup_54c30eedec44d98ea00e133c666df9f6)
+        ;
+
+        
+    
+    
+            marker_ca5e33f2bb2f9641d069e381c71f9cff.bindTooltip(
+                `<div>
+                     Klinikum Krefeld
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c69c9d563111250e2619198a5057a978 = L.marker(
+                [51.3778378, 6.5146743],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_ac8087e9e9ff1d01ec6012e1f7aa3796 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c69c9d563111250e2619198a5057a978.setIcon(icon_ac8087e9e9ff1d01ec6012e1f7aa3796);
+        
+    
+        var popup_3b7345ec16532fbbe21f6f4fffce0a6c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_aa1db8f253f10c5f745d1f2f37e07437 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IRUxJT1MgS2xpbmlrIEjDvGxzIDwvYj48YnIvPkhFTElPUyBLbGluaWt1bSBLcmVmZWxkIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE1MSkzMjI5MTMgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5rbGluaWt1bS1rcmVmZWxkLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEFtIEvDtm5pZ3NwYXJrIEtyZWZlbGQgNDc4MzkgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBIRUxJT1MgS2xpbmlrdW0gS3JlZmVsZCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEyMjcgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQXVnZW5oZWlsa3VuZGUoNTIpLENoaXJ1cmdpZSgyODcpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDkzKSxHZXJpYXRyaWUoNTgpLEhhbHMtTmFzZW4tT2hyZW5oZWlsa3VuZGUoNjUpLEhhdXQtR2VzY2hsZWNodHNrcmFua2hlaXRlbigzOCksSGVyemNoaXJ1cmdpZSg0NSksSW5uZXJlIE1lZGl6aW4oMzQzKSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDEwNCksTmV1cm9jaGlydXJnaWUoNDMpLE5ldXJvbG9naWUoNTEpLE51a2xlYXJtZWRpemluKFRoZXJhcGllKSg4KSxTdHJhaGxlbnRoZXJhcGllKDEwKSxVcm9sb2dpZSgzMCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_3b7345ec16532fbbe21f6f4fffce0a6c.setContent(i_frame_aa1db8f253f10c5f745d1f2f37e07437);
+            
+        
+
+        marker_c69c9d563111250e2619198a5057a978.bindPopup(popup_3b7345ec16532fbbe21f6f4fffce0a6c)
+        ;
+
+        
+    
+    
+            marker_c69c9d563111250e2619198a5057a978.bindTooltip(
+                `<div>
+                     HELIOS Klinik Hüls
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_484a1ed2130091e8ca32b417db3704a0 = L.marker(
+                [51.3525672, 6.6479569],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_3ef1a008ec6603463448ba5bbb48a8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_484a1ed2130091e8ca32b417db3704a0.setIcon(icon_3ef1a008ec6603463448ba5bbb48a8ed);
+        
+    
+        var popup_39e48e91b571bef1dc72f5430909799a = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4f51c056c9ad0cb30887f43580f0935a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5NYWx0ZXNlciBLcmFua2VuaGF1cyBTdC4gSm9zZWZzaG9zcGl0YWwgPC9iPjxici8+TWFsdGVzZXIgS3JhbmtlbmhhdXMgU3QuIEpvc2Vmc2hvc3BpdGFsIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE1MSk0NTIyMTEgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5zdGpvc2VmLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEt1cmbDvHJzdGVuc3RyLiAgNjkgS3JlZmVsZCA0NzgyOSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IE1hbHRlc2VyLVJoZWluLVJ1aHIgZ0dtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMjYyIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSg3NCksRnJhdWVuaGVpbGt1bmRlIHVuZCBHZWJ1cnRzaGlsZmUoMjEpLElubmVyZSBNZWRpemluKDc3KSxNS0ctQ2hpcnVyZ2llKDM5KSxVcm9sb2dpZSg1MSkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_39e48e91b571bef1dc72f5430909799a.setContent(i_frame_4f51c056c9ad0cb30887f43580f0935a);
+            
+        
+
+        marker_484a1ed2130091e8ca32b417db3704a0.bindPopup(popup_39e48e91b571bef1dc72f5430909799a)
+        ;
+
+        
+    
+    
+            marker_484a1ed2130091e8ca32b417db3704a0.bindTooltip(
+                `<div>
+                     Malteser Krankenhaus St. Josefshospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d815c428b731099ed9cb011a2b1710dd = L.marker(
+                [51.3140305, 6.573720499999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_3f392f3a7c4872b19b52443c807d9d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d815c428b731099ed9cb011a2b1710dd.setIcon(icon_3f392f3a7c4872b19b52443c807d9d66);
+        
+    
+        var popup_b82dfab0b46b4dfb713bfd03e57e470d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_746ff29c7f27769423c577f6f5f9b316 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LbGluaWsgS8O2bmlnc2hvZiA8L2I+PGJyLz5LbGluaWsgS8O2bmlnc2hvZiA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxNTEpMzMyNzcgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5rbGluaWsta29lbmlnc2hvZi1rcmVmZWxkLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEFtIERyZWlmYWx0aWdrZWl0c2tsb3N0ZXIgMTYgS3JlZmVsZCA0NzgwNyA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEF1Z3VzdGludXMgRmFjaGtsaW5pa2VuIGdHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEyOCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBOZXVyb2xvZ2llKDIwKSxQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoMTA4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_b82dfab0b46b4dfb713bfd03e57e470d.setContent(i_frame_746ff29c7f27769423c577f6f5f9b316);
+            
+        
+
+        marker_d815c428b731099ed9cb011a2b1710dd.bindPopup(popup_b82dfab0b46b4dfb713bfd03e57e470d)
+        ;
+
+        
+    
+    
+            marker_d815c428b731099ed9cb011a2b1710dd.bindTooltip(
+                `<div>
+                     Klinik Königshof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d08f45304edd9fd6bd03deb18ad51d2c = L.marker(
+                [51.3247565, 6.5880757],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_f19ade8d836c56aeddea1df05e3cc5fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d08f45304edd9fd6bd03deb18ad51d2c.setIcon(icon_f19ade8d836c56aeddea1df05e3cc5fd);
+        
+    
+        var popup_9f583240c3338496c5a3f600a7104f77 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_f9cfdcc92bce9fd7752a95b9609281f3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbGV4aWFuZXIgS3JlZmVsZCBHbWJIIDwvYj48YnIvPktyYW5rZW5oYXVzIE1hcmlhLUhpbGYgPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxNTEzMzQyNTAxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cuYWxleGlhbmVyLWtyZWZlbGQuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gRGllw59lbWVyIEJydWNoIDgxIEtyZWZlbGQgNDc4MDUgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBuYW4gPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNTc1IDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSg4NCksR2VyaWF0cmllKDMwKSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDQpLElubmVyZSBNZWRpemluKDEzNyksTmV1cm9sb2dpZSg4NCksUHN5Y2hpYXRyaWUgdW5kIFBzeWNob3RoZXJhcGllLCBQc3ljaG9zb21hdGlzY2hlIE1lZGl6aW4gdW5kIFBzeWNob3RoZXJhcGllKDIwMCksVXJvbG9naWUoMzYpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_9f583240c3338496c5a3f600a7104f77.setContent(i_frame_f9cfdcc92bce9fd7752a95b9609281f3);
+            
+        
+
+        marker_d08f45304edd9fd6bd03deb18ad51d2c.bindPopup(popup_9f583240c3338496c5a3f600a7104f77)
+        ;
+
+        
+    
+    
+            marker_d08f45304edd9fd6bd03deb18ad51d2c.bindTooltip(
+                `<div>
+                     Alexianer Krefeld GmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_869d7abfaa6f51000355092f0c929784 = L.marker(
+                [51.2244246, 6.4701346],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_1c4e50ae42289784a04301b5819cf3d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_869d7abfaa6f51000355092f0c929784.setIcon(icon_1c4e50ae42289784a04301b5819cf3d1);
+        
+    
+        var popup_60be30ca31c019ffe0b2a1be525ac787 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_358ee0c76cae5098e0b4ead02a5abf13 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmFua2VuaGF1cyBOZXV3ZXJrIE1hcmlhIHZvbiBkZW4gQXBvc3RlbG4gPC9iPjxici8+S0ggTmV1d2VyayBNYXJpYSB2b24gZGVuIEFwb3N0ZWxuIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE2MSk2NjgwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cua2gtbmV1d2Vyay5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBEw7xubmVyIFN0ci4gMjE0LTIxNiBNw7ZuY2hlbmdsYWRiYWNoIDQxMDY2IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gS3JhbmtlbmhhdXMgTmV1d2VyayBNYXJpYSB2b24gZGVuIEFwb3N0ZWxuIGdHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDMxMCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoMTQwKSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSg0NiksSW5uZXJlIE1lZGl6aW4oMTA0KSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDIwKSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_60be30ca31c019ffe0b2a1be525ac787.setContent(i_frame_358ee0c76cae5098e0b4ead02a5abf13);
+            
+        
+
+        marker_869d7abfaa6f51000355092f0c929784.bindPopup(popup_60be30ca31c019ffe0b2a1be525ac787)
+        ;
+
+        
+    
+    
+            marker_869d7abfaa6f51000355092f0c929784.bindTooltip(
+                `<div>
+                     Krankenhaus Neuwerk Maria von den Aposteln
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39ee0876922a72db739adaa3fe3a8454 = L.marker(
+                [51.1579311, 6.4190024],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_c3466ae511a61f05554ea36b4292197e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_39ee0876922a72db739adaa3fe3a8454.setIcon(icon_c3466ae511a61f05554ea36b4292197e);
+        
+    
+        var popup_358bc025735bc287fbd38822ee248b17 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b47db7d19ff51fa03524b20737da8f5e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5FbGlzYWJldGgtS3JhbmtlbmhhdXMgUmhleWR0IDwvYj48YnIvPlN0w6RkdGlzY2hlIEtsaW5pa2VuIE3Dtm5jaGVuZ2xhZGJhY2ggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTY2KTM5NC0gPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5zay1tZy5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBIdWJlcnR1c3N0ci4gMTAwIE3Dtm5jaGVuZ2xhZGJhY2ggNDEyMzkgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBTdMOkZHRpc2NoZSBLbGluaWtlbiBNw7ZuY2hlbmdsYWRiYWNoIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNTQyIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxMDMpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDY0KSxHZXJpYXRyaWUoODMpLEhhbHMtTmFzZW4tT2hyZW5oZWlsa3VuZGUoMCksSW5uZXJlIE1lZGl6aW4oMTQ3KSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDEwOCksVXJvbG9naWUoMzcpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_358bc025735bc287fbd38822ee248b17.setContent(i_frame_b47db7d19ff51fa03524b20737da8f5e);
+            
+        
+
+        marker_39ee0876922a72db739adaa3fe3a8454.bindPopup(popup_358bc025735bc287fbd38822ee248b17)
+        ;
+
+        
+    
+    
+            marker_39ee0876922a72db739adaa3fe3a8454.bindTooltip(
+                `<div>
+                     Elisabeth-Krankenhaus Rheydt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3406533c0db50fd077c73740ae4f15a = L.marker(
+                [51.1882275, 6.3641235],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_075cb00b37166c3f07b1a1d213a8fa88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b3406533c0db50fd077c73740ae4f15a.setIcon(icon_075cb00b37166c3f07b1a1d213a8fa88);
+        
+    
+        var popup_ec98978dcd70d97bcb99cd7fe18f8db3 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_8852ed7ac6acd05b31b9d8844724c910 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IYXJkdGVyd2FsZC1LbGluaWsgKExvdWlzZS1HdWV1cnktU3RpZnR1bmcpIDwvYj48YnIvPlN0w6RkdGlzY2hlIEtsaW5pa2VuIE3Dtm5jaGVuZ2xhZGJhY2ggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTY2KTM5NC0gPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5zay1tZy5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBMb3Vpc2UtR3VldXJ5LVN0ci4gNDAwIE3Dtm5jaGVuZ2xhZGJhY2ggNDExNjkgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBTdMOkZHRpc2NoZSBLbGluaWtlbiBNw7ZuY2hlbmdsYWRiYWNoIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNTQyIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxMDMpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDY0KSxHZXJpYXRyaWUoODMpLEhhbHMtTmFzZW4tT2hyZW5oZWlsa3VuZGUoMCksSW5uZXJlIE1lZGl6aW4oMTQ3KSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDEwOCksVXJvbG9naWUoMzcpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_ec98978dcd70d97bcb99cd7fe18f8db3.setContent(i_frame_8852ed7ac6acd05b31b9d8844724c910);
+            
+        
+
+        marker_b3406533c0db50fd077c73740ae4f15a.bindPopup(popup_ec98978dcd70d97bcb99cd7fe18f8db3)
+        ;
+
+        
+    
+    
+            marker_b3406533c0db50fd077c73740ae4f15a.bindTooltip(
+                `<div>
+                     Hardterwald-Klinik (Louise-Gueury-Stiftung)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f779ff2f11a914bece784ca36c51e8e5 = L.marker(
+                [51.1973046, 6.429528299999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_7b9cfe59a1aea8e0d37df915e2d6f4f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f779ff2f11a914bece784ca36c51e8e5.setIcon(icon_7b9cfe59a1aea8e0d37df915e2d6f4f9);
+        
+    
+        var popup_6557e93dba21ba13a7417295a6b0b906 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_35781b63ffb9e04fe92be238a404d314 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmFua2VuaGF1cyBNYXJpYS1IaWxmIDwvYj48YnIvPktsaW5pa2VuIE1hcmlhLUhpbGYgIE3Dtm5jaGVuZ2xhZGJhY2ggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTYxKTM1ODEgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5tYXJpYWhpbGYuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gU2FuZHJhZHN0ci4gNDMgTcO2bmNoZW5nbGFkYmFjaCA0MTA2MSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEtsaW5pa2VuIE1hcmlhIEhpbGYgR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA3NTQgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDE2OSksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSg1NiksSW5uZXJlIE1lZGl6aW4oMjk1KSxOZXVyb2xvZ2llKDEyNSksTnVrbGVhcm1lZGl6aW4oVGhlcmFwaWUpKDYpLFN0cmFobGVudGhlcmFwaWUoMzUpLFVyb2xvZ2llKDY4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_6557e93dba21ba13a7417295a6b0b906.setContent(i_frame_35781b63ffb9e04fe92be238a404d314);
+            
+        
+
+        marker_f779ff2f11a914bece784ca36c51e8e5.bindPopup(popup_6557e93dba21ba13a7417295a6b0b906)
+        ;
+
+        
+    
+    
+            marker_f779ff2f11a914bece784ca36c51e8e5.bindTooltip(
+                `<div>
+                     Krankenhaus Maria-Hilf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8d11e632e61122320d2d6380d91d15a = L.marker(
+                [51.2195611, 6.4181518],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_8c47b5b2268ea5d867f7a3dfd8755208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f8d11e632e61122320d2d6380d91d15a.setIcon(icon_8c47b5b2268ea5d867f7a3dfd8755208);
+        
+    
+        var popup_6de9a0f10d15ecd3e0a8fe5e8e5bf8bb = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_624ed67c47da105d83b8a56371856cec = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmFua2VuaGF1cyBTdC4gRnJhbnppc2t1cyA8L2I+PGJyLz5LbGluaWtlbiBNYXJpYS1IaWxmICBNw7ZuY2hlbmdsYWRiYWNoIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE2MSkzNTgxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cubWFyaWFoaWxmLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IFZpZXJzZW5lciBTdHIuICA0NTAgTcO2bmNoZW5nbGFkYmFjaCA0MTA2MyA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEtsaW5pa2VuIE1hcmlhIEhpbGYgR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA3NTQgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDE2OSksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSg1NiksSW5uZXJlIE1lZGl6aW4oMjk1KSxOZXVyb2xvZ2llKDEyNSksTnVrbGVhcm1lZGl6aW4oVGhlcmFwaWUpKDYpLFN0cmFobGVudGhlcmFwaWUoMzUpLFVyb2xvZ2llKDY4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_6de9a0f10d15ecd3e0a8fe5e8e5bf8bb.setContent(i_frame_624ed67c47da105d83b8a56371856cec);
+            
+        
+
+        marker_f8d11e632e61122320d2d6380d91d15a.bindPopup(popup_6de9a0f10d15ecd3e0a8fe5e8e5bf8bb)
+        ;
+
+        
+    
+    
+            marker_f8d11e632e61122320d2d6380d91d15a.bindTooltip(
+                `<div>
+                     Krankenhaus St. Franziskus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d0273607089e39b0395d5f0cf75c418 = L.marker(
+                [51.1992886, 6.424836699999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_1cd9aa41604bd45bc8d9ec09e46763ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_3d0273607089e39b0395d5f0cf75c418.setIcon(icon_1cd9aa41604bd45bc8d9ec09e46763ed);
+        
+    
+        var popup_fc7da62c93b7a76f16f0efd2af3991c8 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_28d5ef6cc992284c4d09b4996ee98ab5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Fdi4gS3JhbmtlbmhhdXMgQmV0aGVzZGEgPC9iPjxici8+RXYuIEtyYW5rZW5oYXVzIEJldGhlc2RhIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE2MSk5ODEtMCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LmJldGhlc2RhLW1nLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEx1ZHdpZy1XZWJlci1TdHIuIDE1IE3Dtm5jaGVuZ2xhZGJhY2ggNDEwNjEgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBFdmFuZ2VsaXNjaGVzIEtyYW5rZW5oYXVzIEJldGhlc2RhIE3Dtm5jaGVuZ2xhZGJhY2ggZ0dtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMjIxIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IEF1Z2VuaGVpbGt1bmRlKDApLENoaXJ1cmdpZSg1MCksRnJhdWVuaGVpbGt1bmRlIHVuZCBHZWJ1cnRzaGlsZmUoNTMpLElubmVyZSBNZWRpemluKDkwKSxNS0ctQ2hpcnVyZ2llKDI4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_fc7da62c93b7a76f16f0efd2af3991c8.setContent(i_frame_28d5ef6cc992284c4d09b4996ee98ab5);
+            
+        
+
+        marker_3d0273607089e39b0395d5f0cf75c418.bindPopup(popup_fc7da62c93b7a76f16f0efd2af3991c8)
+        ;
+
+        
+    
+    
+            marker_3d0273607089e39b0395d5f0cf75c418.bindTooltip(
+                `<div>
+                     Ev. Krankenhaus Bethesda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_965d1617341ad9911c93b58c1e918935 = L.marker(
+                [51.17037999999999, 6.437970000000001],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_b824ceb8aece0995a5b5951673e45653 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_965d1617341ad9911c93b58c1e918935.setIcon(icon_b824ceb8aece0995a5b5951673e45653);
+        
+    
+        var popup_446b9b05370d90405d7d0d9a34734401 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b4663e542def2b55ff4453d57b992c33 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MVlItS2xpbmlrIE3Dtm5jaGVuZ2xhZGJhY2ggPC9iPjxici8+TFZSLUtsaW5payBNw7ZuY2hlbmdsYWRiYWNoIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE2NikzNTkxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cucmstbW9lbmNoZW5nbGFkYmFjaC5sdnIuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gSGVpbnJpY2gtUGVzY2gtU3RyLiAzOSBNw7ZuY2hlbmdsYWRiYWNoIDQxMjM5IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gRGlyZWt0b3JpbiBkZXMgTGFuZHNjaGFmdHN2ZXJiYW5kZXMgUmhlaW5sYW5kIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE5MCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoMTkwKSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_446b9b05370d90405d7d0d9a34734401.setContent(i_frame_b4663e542def2b55ff4453d57b992c33);
+            
+        
+
+        marker_965d1617341ad9911c93b58c1e918935.bindPopup(popup_446b9b05370d90405d7d0d9a34734401)
+        ;
+
+        
+    
+    
+            marker_965d1617341ad9911c93b58c1e918935.bindTooltip(
+                `<div>
+                     LVR-Klinik Mönchengladbach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a8c5e3c918a54f7907fa26e331031e7 = L.marker(
+                [51.1642946, 6.938195899999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_f82dea9cb9eec6b5f3d182757a78f1f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_8a8c5e3c918a54f7907fa26e331031e7.setIcon(icon_f82dea9cb9eec6b5f3d182757a78f1f2);
+        
+    
+        var popup_dae2005b7a23bc8115c90b398ed2d1c7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_1aa8120de3e7349cbb435ef8870b1a34 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5DYXBpbyBLbGluaWsgYW0gUGFyayA8L2I+PGJyLz5DYXBpbyBLbGluaWsgYW0gUGFyayA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEwMy04OTYwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cua2xpbmlrLWltLXBhcmsuZGUgPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBIYWdlbGtyZXV6c3RyYcOfZSAzNyBIaWxkZW4gNDA3MjEgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBuYW4gPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNDggPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDQ4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_dae2005b7a23bc8115c90b398ed2d1c7.setContent(i_frame_1aa8120de3e7349cbb435ef8870b1a34);
+            
+        
+
+        marker_8a8c5e3c918a54f7907fa26e331031e7.bindPopup(popup_dae2005b7a23bc8115c90b398ed2d1c7)
+        ;
+
+        
+    
+    
+            marker_8a8c5e3c918a54f7907fa26e331031e7.bindTooltip(
+                `<div>
+                     Capio Klinik am Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a810376e4f0a2bdec21e3407b34a479 = L.marker(
+                [51.16770469999999, 6.943657099999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_d4486e2a957c24c4e8f5dedfe56eed8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2a810376e4f0a2bdec21e3407b34a479.setIcon(icon_d4486e2a957c24c4e8f5dedfe56eed8f);
+        
+    
+        var popup_bec73f616bb7619dc367d03ed874e164 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_956bbffde2128061bb5f3751bb42f70b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gSm9zZWZzIC0gS3JhbmtlbmhhdXMgPC9iPjxici8+U3QuIEpvc2VmcyBLcmFua2VuaGF1cyA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxMDMpODk5MCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LmstcGx1cy5kZS9pbmRleDIucGhwIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gV2FsZGVyIFN0ci4gMzQtMzggSGlsZGVuIDQwNzI0IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3QuIEpvc2VmcyBLcmFua2VuaGF1cyBIaWxkZW4gR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiAxODMgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDYwKSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSg0MCksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSg1KSxJbm5lcmUgTWVkaXppbig3OCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_bec73f616bb7619dc367d03ed874e164.setContent(i_frame_956bbffde2128061bb5f3751bb42f70b);
+            
+        
+
+        marker_2a810376e4f0a2bdec21e3407b34a479.bindPopup(popup_bec73f616bb7619dc367d03ed874e164)
+        ;
+
+        
+    
+    
+            marker_2a810376e4f0a2bdec21e3407b34a479.bindTooltip(
+                `<div>
+                     St. Josefs - Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f120f8bdad3b7ff2a24a52cd437c537 = L.marker(
+                [51.25132809999999, 6.9705174],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_97bdc071284b9623cb261260e54f0183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7f120f8bdad3b7ff2a24a52cd437c537.setIcon(icon_97bdc071284b9623cb261260e54f0183);
+        
+    
+        var popup_b0ca10d40372b46796c88e0744aa7161 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_7bdecf9f5821cd3043f745a727f318fc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Fdi4gS3JhbmtlbmhhdXMgPC9iPjxici8+RXZhbmdlbGlzY2hlcyBLcmFua2VuaGF1cyBNZXR0bWFubiBHbWJIIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjEwNCk3NzM0OTMwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cuZXZrLW1ldHRtYW5uLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEdhcnRlbnN0ci4gNC04IE1ldHRtYW5uIDQwODIyIDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gRXZhbmdlbGlzY2hlcyBLcmFua2VuaGF1cyBNZXR0bWFubiBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDI0NSA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoNzgpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDIwKSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDcpLElubmVyZSBNZWRpemluKDE0MCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_b0ca10d40372b46796c88e0744aa7161.setContent(i_frame_7bdecf9f5821cd3043f745a727f318fc);
+            
+        
+
+        marker_7f120f8bdad3b7ff2a24a52cd437c537.bindPopup(popup_b0ca10d40372b46796c88e0744aa7161)
+        ;
+
+        
+    
+    
+            marker_7f120f8bdad3b7ff2a24a52cd437c537.bindTooltip(
+                `<div>
+                     Ev. Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15b3d2f6ea58c25b2b28e3b25092d0ab = L.marker(
+                [51.3001401, 6.8521857],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_1307603a9ac8c2248e980fef5dcf298b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_15b3d2f6ea58c25b2b28e3b25092d0ab.setIcon(icon_1307603a9ac8c2248e980fef5dcf298b);
+        
+    
+        var popup_269138af2aef79d6c3a7c441751f26e0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_d6c478268926fb2821a8ae5597a92b06 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gTWFyaWVuIC0gS3JhbmtlbmhhdXMgR21iSCA8L2I+PGJyLz5TdC4gTWFyaWVuLUtyYW5rZW5oYXVzIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTAyODUxNDEyNyA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnNta3IuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gV2VyZGVuZXIgU3RyLiAzIFJhdGluZ2VuIDQwODc4IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3QuIE1hcmllbi1LcmFua2VuaGF1cyBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE5MSA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoNjIpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDIwKSxIYWxzLU5hc2VuLU9ocmVuaGVpbGt1bmRlKDIpLElubmVyZSBNZWRpemluKDEwNykgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_269138af2aef79d6c3a7c441751f26e0.setContent(i_frame_d6c478268926fb2821a8ae5597a92b06);
+            
+        
+
+        marker_15b3d2f6ea58c25b2b28e3b25092d0ab.bindPopup(popup_269138af2aef79d6c3a7c441751f26e0)
+        ;
+
+        
+    
+    
+            marker_15b3d2f6ea58c25b2b28e3b25092d0ab.bindTooltip(
+                `<div>
+                     St. Marien - Krankenhaus GmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f31a658bd9ebda03a0fba752ec4cc6a7 = L.marker(
+                [51.3001373, 6.859258899999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_18b9ac1c6daf2d7411da31b3bebf113f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f31a658bd9ebda03a0fba752ec4cc6a7.setIcon(icon_18b9ac1c6daf2d7411da31b3bebf113f);
+        
+    
+        var popup_23295fa914c692433f277acd414d5957 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_228972fa92b879940481bf67e43ff6c9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5GYWNoa2xpbmlrIDM2MCA8L2I+PGJyLz5GYWNoa2xpbmlrIDM2MCAgUmF0aW5nZW4gPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTAyKTIwNi0wIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cuZmFjaGtsaW5pazM2MGdyYWQuZGUgPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBSb3NlbnN0ci4gMiBSYXRpbmdlbiA0MDg4MiA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IEZhY2hrbGluaWsgMzYwIEdtYkggIFJhdGluZ2VuIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEyMCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoODUpLElubmVyZSBNZWRpemluKDM1KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_23295fa914c692433f277acd414d5957.setContent(i_frame_228972fa92b879940481bf67e43ff6c9);
+            
+        
+
+        marker_f31a658bd9ebda03a0fba752ec4cc6a7.bindPopup(popup_23295fa914c692433f277acd414d5957)
+        ;
+
+        
+    
+    
+            marker_f31a658bd9ebda03a0fba752ec4cc6a7.bindTooltip(
+                `<div>
+                     Fachklinik 360
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b1adcac4221e3d6ad2093df3f4e5246 = L.marker(
+                [51.3329709, 6.8178535],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_499c739acee772edb5a885a83bbad6fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_8b1adcac4221e3d6ad2093df3f4e5246.setIcon(icon_499c739acee772edb5a885a83bbad6fd);
+        
+    
+        var popup_c95074e1237fd1c6ea794485bb0872e6 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_e9029e1b884c4962bcd070bf3ef35824 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5UaGVvZG9yLUZsaWVkbmVyLUtyYW5rZW5oYXVzIDwvYj48YnIvPlRoZW9kb3ItRmxpZWRuZXItS3JhbmtlbmhhdXMsIFJhdGluZ2VuIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTAyLzMwMy0wIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cuZmxpZWRuZXIuZGUvc2VlbGlzY2hlX2dlc3VuZGhlaXQvZmxpZWRuIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gVGh1bmVzd2VnIDU4IFJhdGluZ2VuIDQwODg1IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gVGhlb2RvciBGbGllZG5lciBXZXJrIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE2MCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoMTYwKSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_c95074e1237fd1c6ea794485bb0872e6.setContent(i_frame_e9029e1b884c4962bcd070bf3ef35824);
+            
+        
+
+        marker_8b1adcac4221e3d6ad2093df3f4e5246.bindPopup(popup_c95074e1237fd1c6ea794485bb0872e6)
+        ;
+
+        
+    
+    
+            marker_8b1adcac4221e3d6ad2093df3f4e5246.bindTooltip(
+                `<div>
+                     Theodor-Fliedner-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a313adfc09cfef00897a47c1fffc89ba = L.marker(
+                [51.0741507, 6.808933700000001],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_aae64c93cf0f7ca83c27a1a2fd421500 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a313adfc09cfef00897a47c1fffc89ba.setIcon(icon_aae64c93cf0f7ca83c27a1a2fd421500);
+        
+    
+        var popup_5819cbf93b988824acc658452f914d60 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_aaf70311b33f7d43dc95ec45afb6d9c0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmVpc2tyYW5rZW5oYXVzIERvcm1hZ2VuIDwvYj48YnIvPktyZWlza3JhbmtlbmhhdXMgRG9ybWFnZW4gPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTMzKTY2MjMxIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cua2toLW5lLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IERyLi1HZWxkbWFjaGVyLVN0ci4gMjAgRG9ybWFnZW4gNDE1NDAgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBSaGVpbi1LcmVpcyBOZXVzcyBLbGluaWtlbiBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDI5NCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoMTI4KSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSgzMCksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSg0KSxJbm5lcmUgTWVkaXppbigxMzIpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_5819cbf93b988824acc658452f914d60.setContent(i_frame_aaf70311b33f7d43dc95ec45afb6d9c0);
+            
+        
+
+        marker_a313adfc09cfef00897a47c1fffc89ba.bindPopup(popup_5819cbf93b988824acc658452f914d60)
+        ;
+
+        
+    
+    
+            marker_a313adfc09cfef00897a47c1fffc89ba.bindTooltip(
+                `<div>
+                     Kreiskrankenhaus Dormagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59873705066bd49a226313fca8b536e3 = L.marker(
+                [51.0908118, 6.5943444],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_4baf77755dd5f63923e10a3e64b50bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_59873705066bd49a226313fca8b536e3.setIcon(icon_4baf77755dd5f63923e10a3e64b50bfc);
+        
+    
+        var popup_6e6f90dcae694740c8a162bc0ee6e9c2 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a1140173649d2e43124b202fa22bc9f2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LcmVpc2tyYW5rZW5oYXVzIDwvYj48YnIvPktyZWlza3JhbmtlbmhhdXMgR3JldmVuYnJvaWNoIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgxLzYwMC0xIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cua2toLW5lLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IFZvbi1XZXJ0aC1TdHIuIDUgR3JldmVuYnJvaWNoIDQxNTE1IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gUmhlaW4tS3JlaXMgTmV1c3MgS2xpbmlrZW4gR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiAyOTggPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDk4KSxGcmF1ZW5oZWlsa3VuZGUgdW5kIEdlYnVydHNoaWxmZSgyNyksR2VyaWF0cmllKDQyKSxJbm5lcmUgTWVkaXppbigxMzEpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_6e6f90dcae694740c8a162bc0ee6e9c2.setContent(i_frame_a1140173649d2e43124b202fa22bc9f2);
+            
+        
+
+        marker_59873705066bd49a226313fca8b536e3.bindPopup(popup_6e6f90dcae694740c8a162bc0ee6e9c2)
+        ;
+
+        
+    
+    
+            marker_59873705066bd49a226313fca8b536e3.bindTooltip(
+                `<div>
+                     Kreiskrankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7646df8acd7588b3ad99f88af28bb789 = L.marker(
+                [51.3047947, 6.677194099999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_c594f2959def1f8a6ad9d9eb2f50158f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7646df8acd7588b3ad99f88af28bb789.setIcon(icon_c594f2959def1f8a6ad9d9eb2f50158f);
+        
+    
+        var popup_0f4530e484ef64a9d86b266bbcecb27a = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4622082391966bdaeb717041d7e03a7a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gRWxpc2FiZXRoIC0gSG9zcGl0YWwgPC9iPjxici8+U3QuIEVsaXNhYmV0aCAtIEhvc3BpdGFsIE1lZXJidXNjaC1MYW5rIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyODQyNzA4NDMwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93ZWIxOS5zMTM0LnR5cG8zc2VydmVyLmNvbS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBIYXVwdHN0ci4gNzQtNzYgTWVlcmJ1c2NoIDQwNjY4IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3QuIEJlcm5oYXJkLUhvc3BpdGFsIEthbXAtTGludGZvcnQgR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA3NiA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoNDYpLElubmVyZSBNZWRpemluKDMwKSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_0f4530e484ef64a9d86b266bbcecb27a.setContent(i_frame_4622082391966bdaeb717041d7e03a7a);
+            
+        
+
+        marker_7646df8acd7588b3ad99f88af28bb789.bindPopup(popup_0f4530e484ef64a9d86b266bbcecb27a)
+        ;
+
+        
+    
+    
+            marker_7646df8acd7588b3ad99f88af28bb789.bindTooltip(
+                `<div>
+                     St. Elisabeth - Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e19609dc5be8f071d44a49c339214bd = L.marker(
+                [51.2135644, 6.6595308],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_3f13f5076c9a40fd02e9e09d3dd64050 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_3e19609dc5be8f071d44a49c339214bd.setIcon(icon_3f13f5076c9a40fd02e9e09d3dd64050);
+        
+    
+        var popup_7937d46a8b001a0bf17674e3003eab01 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ae843ae52f627213b54d1e7ec38faf1e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Kb2hhbm5hLUV0aWVubmUtS3JhbmtlbmhhdXMgPC9iPjxici8+Sm9oYW5uYS1FdGllbm5lLUtyYW5rZW5oYXVzLCBOZXVzcyA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxMzEpNTI5LTcwMDAgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5qb2hhbm5hLWV0aWVubmUta3JhbmtlbmhhdXMuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gQW0gSGFzZW5iZXJnIDQ2IE5ldXNzIDQxNDYyIDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3QuIEF1Z3VzdGludXMtS2xpbmlrZW4gZ0dtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNDE1IDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSgxNjYpLEZyYXVlbmhlaWxrdW5kZSB1bmQgR2VidXJ0c2hpbGZlKDQ4KSxJbm5lcmUgTWVkaXppbigxMjMpLE5ldXJvbG9naWUoNzgpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_7937d46a8b001a0bf17674e3003eab01.setContent(i_frame_ae843ae52f627213b54d1e7ec38faf1e);
+            
+        
+
+        marker_3e19609dc5be8f071d44a49c339214bd.bindPopup(popup_7937d46a8b001a0bf17674e3003eab01)
+        ;
+
+        
+    
+    
+            marker_3e19609dc5be8f071d44a49c339214bd.bindTooltip(
+                `<div>
+                     Johanna-Etienne-Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f184b6a674fbfa2650f9d795d4f3d7f9 = L.marker(
+                [51.19052629999999, 6.670160600000001],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_77ad053e638fcfd85fe643bccdca2d05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f184b6a674fbfa2650f9d795d4f3d7f9.setIcon(icon_77ad053e638fcfd85fe643bccdca2d05);
+        
+    
+        var popup_e15456be1793122a449e90f76fd0a676 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a0295c478fbcaa165e5d0d919e1e438c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdMOkZHQuIEtsaW5pa2VuIE5ldXNzIC0gTHVrYXNrcmFua2VuaGF1cyAtIDwvYj48YnIvPlN0w6RkdC4gS2xpbmlrZW4gTmV1c3MgLSBMdWthc2tyYW5rZW5oYXVzIC0gPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTMxKTg4ODc1MDIgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5sdWthc25ldXNzLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IFByZXXDn2Vuc3RyLiA4NCBOZXVzcyA0MTQ2NCA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IFN0w6RkdC4gS2xpbmlrZW4gTmV1c3MgLSBMdWthc2tyYW5rZW5oYXVzIC0gR21iSCA8YnIvPjxiPkJldHRlbiBnZXNhbXQ6PC9iPiA1MzcgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gQ2hpcnVyZ2llKDEzNyksRnJhdWVuaGVpbGt1bmRlIHVuZCBHZWJ1cnRzaGlsZmUoNDQpLEdlcmlhdHJpZSgzMCksSGFscy1OYXNlbi1PaHJlbmhlaWxrdW5kZSgzMCksSW5uZXJlIE1lZGl6aW4oMjAwKSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDUwKSxTdHJhaGxlbnRoZXJhcGllKDEpLFVyb2xvZ2llKDQ1KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_e15456be1793122a449e90f76fd0a676.setContent(i_frame_a0295c478fbcaa165e5d0d919e1e438c);
+            
+        
+
+        marker_f184b6a674fbfa2650f9d795d4f3d7f9.bindPopup(popup_e15456be1793122a449e90f76fd0a676)
+        ;
+
+        
+    
+    
+            marker_f184b6a674fbfa2650f9d795d4f3d7f9.bindTooltip(
+                `<div>
+                     Städt. Kliniken Neuss - Lukaskrankenhaus -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7841930f2c60dcd5f722e11c63b7ec8 = L.marker(
+                [51.1913616, 6.7014169],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_798c2d7fce1a4bc32a0da2f1a22e7788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e7841930f2c60dcd5f722e11c63b7ec8.setIcon(icon_798c2d7fce1a4bc32a0da2f1a22e7788);
+        
+    
+        var popup_0a0285d2f3e3b24f6901fcc48ebc2a4d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4a6f8cd490150e4fdcf9301e5bf9b22a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gSm9zZWYgLyBTdC4gQWxleGl1cyAgS3JhbmtlbmhhdXMgPC9iPjxici8+RmFjaGtyYW5rZW5ow6R1c2VyIFN0LiBKb3NlZiAvIFN0LiBBbGV4aXVzIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLzEwNS0wIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHBzOi8vd3d3LnBzeWNoaWF0cmllLW5ldXNzLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IE5vcmRrYW5hbGFsbGVlIDk5IE5ldXNzIDQxNDY0IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gQXVndXN0aW51cyBGYWNoa2xpbmlrZW4gZ0dtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMzUzIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IFBzeWNoaWF0cmllIHVuZCBQc3ljaG90aGVyYXBpZSwgUHN5Y2hvc29tYXRpc2NoZSBNZWRpemluIHVuZCBQc3ljaG90aGVyYXBpZSgzNTMpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_0a0285d2f3e3b24f6901fcc48ebc2a4d.setContent(i_frame_4a6f8cd490150e4fdcf9301e5bf9b22a);
+            
+        
+
+        marker_e7841930f2c60dcd5f722e11c63b7ec8.bindPopup(popup_0a0285d2f3e3b24f6901fcc48ebc2a4d)
+        ;
+
+        
+    
+    
+            marker_e7841930f2c60dcd5f722e11c63b7ec8.bindTooltip(
+                `<div>
+                     St. Josef / St. Alexius  Krankenhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53957266cd8216dae42907d3b3260820 = L.marker(
+                [51.2483498, 6.6753504],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_55f74a23988773fc2e125dbd36597624 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_53957266cd8216dae42907d3b3260820.setIcon(icon_55f74a23988773fc2e125dbd36597624);
+        
+    
+        var popup_bd2d56ad7a95f73eb83c419bbd34b506 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a33c0a2d0dcf9d4c1451c8e2db48130c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbGV4aWFuZXItS2xpbmlrIE1lZXJidXNjaCBHbWJIIDwvYj48YnIvPkFsZXhpYW5lci1LbGluaWsgTWVlcmJ1c2NoIEdtYkggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzItMTM3NjAgPGJyLz48Yj5XZWI6PC9iPjxlbT4gaHR0cDovL3d3dy5hbGV4aWFuZXIta3JlZmVsZC5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEFtIEVpc2VuYnJhbmQgMjAgYi8gYyBNZWVyYnVzY2ggNDA2NjcgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBBbGV4aWFuZXItS2xpbmlrIE1lZXJidXNjaCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEwMCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiAxMDAgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_bd2d56ad7a95f73eb83c419bbd34b506.setContent(i_frame_a33c0a2d0dcf9d4c1451c8e2db48130c);
+            
+        
+
+        marker_53957266cd8216dae42907d3b3260820.bindPopup(popup_bd2d56ad7a95f73eb83c419bbd34b506)
+        ;
+
+        
+    
+    
+            marker_53957266cd8216dae42907d3b3260820.bindTooltip(
+                `<div>
+                     Alexianer-Klinik Meerbusch GmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d73d7902f96ba315f84f0a8aa4c8f279 = L.marker(
+                [51.20241739999999, 6.6907935],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_27ad3938b6028120e31a640621e83ef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d73d7902f96ba315f84f0a8aa4c8f279.setIcon(icon_27ad3938b6028120e31a640621e83ef9);
+        
+    
+        var popup_88d995589de9bb4a3892fe6c90d4e1cd = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_42c8f3cedfa6063d3c127dc7b88dae2d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SaGVpbnRvciBLbGluaWsgPC9iPjxici8+UmhlaW50b3IgS2xpbmlrIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTI2OTUwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHBzOi8vcmhlaW50b3JrbGluaWsuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gSGFmZW5zdHIuIDY4LTc2IE5ldXNzIDQxNDYwIDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gbmFuIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDEwMCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiAxMDAgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_88d995589de9bb4a3892fe6c90d4e1cd.setContent(i_frame_42c8f3cedfa6063d3c127dc7b88dae2d);
+            
+        
+
+        marker_d73d7902f96ba315f84f0a8aa4c8f279.bindPopup(popup_88d995589de9bb4a3892fe6c90d4e1cd)
+        ;
+
+        
+    
+    
+            marker_d73d7902f96ba315f84f0a8aa4c8f279.bindTooltip(
+                `<div>
+                     Rheintor Klinik
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b58fa8bb399059ea2d7936a0c016541a = L.marker(
+                [51.30893, 6.270309999999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_6e8da565191e74107335ec51ee5d8fce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b58fa8bb399059ea2d7936a0c016541a.setIcon(icon_6e8da565191e74107335ec51ee5d8fce);
+        
+    
+        var popup_69fc89560fd10f1bde4ea1d8a96d5be3 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_3bdda7180fb4251ef3024cb1ad0e7cb9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdMOkZHQuIEtyYW5rZW5oYXVzIE5ldHRldGFsIEdtYkggPC9iPjxici8+U3TDpGR0aXNjaGVzIEtyYW5rZW5oYXVzIE5ldHRldGFsIEdtYkggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTUzKTEyNTg1MCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LmtyYW5rZW5oYXVzLW5ldHRldGFsLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IFNhc3NlbmZlbGRlciBLaXJjaHdlZyAxIE5ldHRldGFsIDQxMzM0IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3TDpGR0LiBLcmFua2VuaGF1cyBOZXR0ZXRhbCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE4NyA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoODApLElubmVyZSBNZWRpemluKDEwNykgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_69fc89560fd10f1bde4ea1d8a96d5be3.setContent(i_frame_3bdda7180fb4251ef3024cb1ad0e7cb9);
+            
+        
+
+        marker_b58fa8bb399059ea2d7936a0c016541a.bindPopup(popup_69fc89560fd10f1bde4ea1d8a96d5be3)
+        ;
+
+        
+    
+    
+            marker_b58fa8bb399059ea2d7936a0c016541a.bindTooltip(
+                `<div>
+                     Städt. Krankenhaus Nettetal GmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35229732e1bfd6087be1bc027758992e = L.marker(
+                [51.30893, 6.270309999999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_1bdcb3bb60fd7d6348a02648f8e47832 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_35229732e1bfd6087be1bc027758992e.setIcon(icon_1bdcb3bb60fd7d6348a02648f8e47832);
+        
+    
+        var popup_60abe8e2a5b5c6adee013fa40041bd4f = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ef2cbced40888c92d29364da98469630 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdMOkZHQuIEtyYW5rZW5oYXVzIE5ldHRldGFsIEdtYkggPC9iPjxici8+U3TDpGR0aXNjaGVzIEtyYW5rZW5oYXVzIE5ldHRldGFsIEdtYkggPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTUzKTEyNTg1MCA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LmtyYW5rZW5oYXVzLW5ldHRldGFsLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IFNhc3NlbmZlbGRlciBLaXJjaHdlZyAxIE5ldHRldGFsIDQxMzM0IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gU3TDpGR0LiBLcmFua2VuaGF1cyBOZXR0ZXRhbCBHbWJIIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE4NyA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoODApLElubmVyZSBNZWRpemluKDEwNykgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_60abe8e2a5b5c6adee013fa40041bd4f.setContent(i_frame_ef2cbced40888c92d29364da98469630);
+            
+        
+
+        marker_35229732e1bfd6087be1bc027758992e.bindPopup(popup_60abe8e2a5b5c6adee013fa40041bd4f)
+        ;
+
+        
+    
+    
+            marker_35229732e1bfd6087be1bc027758992e.bindTooltip(
+                `<div>
+                     Städt. Krankenhaus Nettetal GmbH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_952d15d46cea897dc618778b9b4004ce = L.marker(
+                [51.322951, 6.489103],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_490f691f6d21aedbeaf0d121a448f4b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_952d15d46cea897dc618778b9b4004ce.setIcon(icon_490f691f6d21aedbeaf0d121a448f4b0);
+        
+    
+        var popup_85dce20cfcebb59e75b37ca4b9591fd3 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a4a5abd22760b8a7b43946a4f6a4b667 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbnRvbml1c3plbnRydW0gR21iSCwgS3Jhbmtlbi0gdW5kIFNlbmlvcmVuaGF1cyBkZXIgU3RhZHQgVMO2bmlzdm9yc3QgPC9iPjxici8+QW50b25pdXN6ZW50cnVtIEdtYkggS3Jhbmtlbi0gdW5kIFNlbmlvcmVuaGF1cyBkZXIgU3RhZHQgVMO2bmlzdm9yc3QgPC9iPjxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gKDAyMTUxKTk5MTU1NSA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LmFsZXhpYW5lci10b2VuaXN2b3JzdC5kZSA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEhvc3BpdGFsc3RyLiAyIFTDtm5pc3ZvcnN0IDQ3OTE4IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gQW50b25pdXN6ZW50cnVtIEdtYkggS3Jhbmtlbi0gdW5kIFNlbmlvcmVuaGF1cyBkZXIgU3RhZHQgVMO2bmlzdm9yc3QgPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gNzUgPGJyLz48Yj5uYWNoIERpc3ppcGxpbmVuOjwvYj4gSW5uZXJlIE1lZGl6aW4oNzUpIDxici8+" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_85dce20cfcebb59e75b37ca4b9591fd3.setContent(i_frame_a4a5abd22760b8a7b43946a4f6a4b667);
+            
+        
+
+        marker_952d15d46cea897dc618778b9b4004ce.bindPopup(popup_85dce20cfcebb59e75b37ca4b9591fd3)
+        ;
+
+        
+    
+    
+            marker_952d15d46cea897dc618778b9b4004ce.bindTooltip(
+                `<div>
+                     Antoniuszentrum GmbH, Kranken- und Seniorenhaus der Stadt Tönisvorst
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8dd2eae1df09cfff46b8c729a9b1f29 = L.marker(
+                [51.291165, 6.3512204],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_ea35b68b279ce0547f14a6816ba24df3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c8dd2eae1df09cfff46b8c729a9b1f29.setIcon(icon_ea35b68b279ce0547f14a6816ba24df3);
+        
+    
+        var popup_7bc4c26d620ab10947566e45b73362a3 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_adb8dedd2d0455a1fe5f303037285aad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MVlIgS2xpbmlrIGbDvHIgT3J0aG9ww6RkaWUgVmllcnNlbiA8L2I+PGJyLz5MVlItS2xpbmlrIGbDvHIgT3J0aG9ww6RkaWUgVmllcnNlbiA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2Mi05NjYwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cucmtvLXZpZXJzZW4ubHZyLmRlLyA8L2VtPjxici8+PGI+QWRyZXNzZTo8L2I+IEhvcmlvbnN0ci4gMiBWaWVyc2VuIDQxNzQ5IDxici8+PGJyLz48Yj5UcsOkZ2VyOjwvYj4gRGlyZWt0b3JpbiBkZXMgTGFuZHNjaGFmdHN2ZXJiYW5kZXMgUmhlaW5sYW5kIDxici8+PGI+QmV0dGVuIGdlc2FtdDo8L2I+IDE2MCA8YnIvPjxiPm5hY2ggRGlzemlwbGluZW46PC9iPiBDaGlydXJnaWUoMTYwKSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_7bc4c26d620ab10947566e45b73362a3.setContent(i_frame_adb8dedd2d0455a1fe5f303037285aad);
+            
+        
+
+        marker_c8dd2eae1df09cfff46b8c729a9b1f29.bindPopup(popup_7bc4c26d620ab10947566e45b73362a3)
+        ;
+
+        
+    
+    
+            marker_c8dd2eae1df09cfff46b8c729a9b1f29.bindTooltip(
+                `<div>
+                     LVR Klinik für Orthopädie Viersen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500b7e86753a3873326ce5e7b1cf23a3 = L.marker(
+                [51.2858216, 6.3750377],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_9ff1cd98745267aa4e1616c1802751d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_500b7e86753a3873326ce5e7b1cf23a3.setIcon(icon_9ff1cd98745267aa4e1616c1802751d1);
+        
+    
+        var popup_a2f2d0530a174775e0f35722b6a49ce9 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_8350fd9b1eea59a595803afe883857a0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdC4gSXJtZ2FyZGlzLUtyYW5rZW5oYXVzIFPDvGNodGVsbiA8L2I+PGJyLz5TdC4gSXJtZ2FyZGlzLUtyYW5rZW5oYXVzIFPDvGNodGVsbiA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2Mjg5OTYwMSA8YnIvPjxiPldlYjo8L2I+PGVtPiBodHRwOi8vd3d3LnN0LWlybWdhcmRpcy1rcmFua2VuaGF1cy5kZS8gPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBUw7ZuaXN2b3JzdGVyIFN0ci4gMjYgVmllcnNlbiA0MTc0OSA8YnIvPjxici8+PGI+VHLDpGdlcjo8L2I+IFN0LiBJcm1nYXJkaXMgS3JhbmtlbmhhdXMgU8O8Y2h0ZWxuIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMTYwIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSg0MCksR2VyaWF0cmllKDYwKSxJbm5lcmUgTWVkaXppbig2MCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_a2f2d0530a174775e0f35722b6a49ce9.setContent(i_frame_8350fd9b1eea59a595803afe883857a0);
+            
+        
+
+        marker_500b7e86753a3873326ce5e7b1cf23a3.bindPopup(popup_a2f2d0530a174775e0f35722b6a49ce9)
+        ;
+
+        
+    
+    
+            marker_500b7e86753a3873326ce5e7b1cf23a3.bindTooltip(
+                `<div>
+                     St. Irmgardis-Krankenhaus Süchteln
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bebddd4fcbf2c4137f3fa60aad250d1 = L.marker(
+                [51.25161380000001, 6.383151199999999],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_47705c53553dceba07bfcb8dc572cd6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4bebddd4fcbf2c4137f3fa60aad250d1.setIcon(icon_47705c53553dceba07bfcb8dc572cd6d);
+        
+    
+        var popup_d680989367192398d05f45091ccb0080 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4192d200c015f362704a4d64cd875076 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbGxnZW1laW5lcyBLcmFua2VuaGF1cyBWaWVyc2VuIDwvYj48YnIvPkFsbGdlbWVpbmVzIEtyYW5rZW5oYXVzIFZpZXJzZW4gR21iSCA8L2I+PGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAoMDIxNjEpMTA0MjAwIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cuYWtoLXZpZXJzZW4uZGUgPC9lbT48YnIvPjxiPkFkcmVzc2U6PC9iPiBIb3NlcmtpcmNod2VnIDYzIFZpZXJzZW4gNDE3NDcgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBBbGxnZW1laW5lcyBLcmFua2VuaGF1cyBWaWVyc2VuIEdtYkggPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMzI1IDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IENoaXJ1cmdpZSg4NyksRnJhdWVuaGVpbGt1bmRlIHVuZCBHZWJ1cnRzaGlsZmUoNTIpLEhhbHMtTmFzZW4tT2hyZW5oZWlsa3VuZGUoNiksSW5uZXJlIE1lZGl6aW4oMTA3KSxLaW5kZXItIHVuZCBKdWdlbmRtZWRpemluKDQ1KSxVcm9sb2dpZSgyOCkgPGJyLz4=" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_d680989367192398d05f45091ccb0080.setContent(i_frame_4192d200c015f362704a4d64cd875076);
+            
+        
+
+        marker_4bebddd4fcbf2c4137f3fa60aad250d1.bindPopup(popup_d680989367192398d05f45091ccb0080)
+        ;
+
+        
+    
+    
+            marker_4bebddd4fcbf2c4137f3fa60aad250d1.bindTooltip(
+                `<div>
+                     Allgemeines Krankenhaus Viersen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f6d685761b392fe40853814e5f3395d = L.marker(
+                [51.288964, 6.3592092],
+                {}
+            ).addTo(map_e40c922a7b58d75b0b1c1080707415ab);
+        
+    
+            var icon_3a29d41ac2beebd523a0725cd80ce2ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "h-square", "iconColor": "black", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2f6d685761b392fe40853814e5f3395d.setIcon(icon_3a29d41ac2beebd523a0725cd80ce2ba);
+        
+    
+        var popup_45376a6c560d4e9674c57b9297c53b4d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_11357f007ec53f0248c1af600fddc17b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MVlIgS2xpbmlrIFZpZXJzZW4gPC9iPjxici8+TFZSLUtsaW5payBWaWVyc2VuIDwvYj48YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+ICgwMjE2Mik2NzExIDxici8+PGI+V2ViOjwvYj48ZW0+IGh0dHA6Ly93d3cucmstdmllcnNlbi5sdnIuZGUvIDwvZW0+PGJyLz48Yj5BZHJlc3NlOjwvYj4gSm9oYW5uaXNzdHIuIDcwIFZpZXJzZW4gNDE3MTcgPGJyLz48YnIvPjxiPlRyw6RnZXI6PC9iPiBEaXJla3RvcmluIGRlcyBMYW5kc2NoYWZ0c3ZlcmJhbmRlcyBSaGVpbmxhbmQgPGJyLz48Yj5CZXR0ZW4gZ2VzYW10OjwvYj4gMzIxIDxici8+PGI+bmFjaCBEaXN6aXBsaW5lbjo8L2I+IEtpbmRlci0gdW5kIEp1Z2VuZHBzeWNoaWF0cmllIHVuZCAtcHN5Y2hvdGhlcmFwaWUoMTEzKSxQc3ljaGlhdHJpZSB1bmQgUHN5Y2hvdGhlcmFwaWUsIFBzeWNob3NvbWF0aXNjaGUgTWVkaXppbiB1bmQgUHN5Y2hvdGhlcmFwaWUoMjA4KSA8YnIvPg==" width="100%" style="border:none !important;" height="260"></iframe>`)[0];
+                popup_45376a6c560d4e9674c57b9297c53b4d.setContent(i_frame_11357f007ec53f0248c1af600fddc17b);
+            
+        
+
+        marker_2f6d685761b392fe40853814e5f3395d.bindPopup(popup_45376a6c560d4e9674c57b9297c53b4d)
+        ;
+
+        
+    
+    
+            marker_2f6d685761b392fe40853814e5f3395d.bindTooltip(
+                `<div>
+                     LVR Klinik Viersen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

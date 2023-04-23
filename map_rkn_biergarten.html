@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Biergärten im Rhein-Kreis Neuss</title>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_695f671981232d1622ca59460ddad014 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_695f671981232d1622ca59460ddad014" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_695f671981232d1622ca59460ddad014 = L.map(
+                "map_695f671981232d1622ca59460ddad014",
+                {
+                    center: [51.166248326942394, 6.673102631064964],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3bf892ed8d9ed07b4b1b2adf089a9b07 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var tile_layer_3dc338072f433547379e69a950fde95d = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var tile_layer_f07f3dfad8d0b2d9860073ece9420052 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var layer_control_e7d6fa0ad8d30603b687ce32e4f19078 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3bf892ed8d9ed07b4b1b2adf089a9b07,
+                    "Google Satellite" : tile_layer_3dc338072f433547379e69a950fde95d,
+                    "Google Satellite Hybrid" : tile_layer_f07f3dfad8d0b2d9860073ece9420052,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_e7d6fa0ad8d30603b687ce32e4f19078.base_layers,
+                layer_control_e7d6fa0ad8d30603b687ce32e4f19078.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+            tile_layer_3dc338072f433547379e69a950fde95d.remove();
+            tile_layer_f07f3dfad8d0b2d9860073ece9420052.remove();
+        
+    
+            var marker_c963703ca485391cb29502d819b5bc10 = L.marker(
+                [51.12344047931551, 6.782815620538652],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_aeaf917da1dda39e4f4a932c690ea648 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_c963703ca485391cb29502d819b5bc10.setIcon(icon_aeaf917da1dda39e4f4a932c690ea648);
+        
+    
+        var popup_fa1bb524f76b6641937e13d569306972 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_94751813f388624c8cd7e0d99c822949 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbHRlciBCYWhuaG9mIE5pZXZlbmhlaW0gPC9iPjxici8+Sm9oYW5uZXNzdHIuIDEgNDE1NDIgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy8yMjcwNDEgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmFsdGVyLWJhaG5ob2YtbmlldmVuaGVpbS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5hbHRlci1iYWhuaG9mLW5pZXZlbmhlaW0uZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_fa1bb524f76b6641937e13d569306972.setContent(i_frame_94751813f388624c8cd7e0d99c822949);
+            
+        
+
+        marker_c963703ca485391cb29502d819b5bc10.bindPopup(popup_fa1bb524f76b6641937e13d569306972)
+        ;
+
+        
+    
+    
+            marker_c963703ca485391cb29502d819b5bc10.bindTooltip(
+                `<div>
+                     Alter Bahnhof Nievenheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b76f538c3032e8265e2c9aa743921620 = L.marker(
+                [51.12702723521334, 6.849049616073784],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_618aaf110e8d4f6a366e3c19fa43c339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b76f538c3032e8265e2c9aa743921620.setIcon(icon_618aaf110e8d4f6a366e3c19fa43c339);
+        
+    
+        var popup_9b44ec264cec0bb8d19f97a59a913213 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_3e02ce262aa2b254a3db33c439176f9b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Gw6RocmhhdXMgWm9ucyA8L2I+PGJyLz5IZXJyZW53ZWcgMzkgNDE1NDEgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy85Nzk3NDAwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5mYWVocmhhdXMtem9ucy5lYXRidS5jb20gdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZmFlaHJoYXVzLXpvbnMuZWF0YnUuY29tPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_9b44ec264cec0bb8d19f97a59a913213.setContent(i_frame_3e02ce262aa2b254a3db33c439176f9b);
+            
+        
+
+        marker_b76f538c3032e8265e2c9aa743921620.bindPopup(popup_9b44ec264cec0bb8d19f97a59a913213)
+        ;
+
+        
+    
+    
+            marker_b76f538c3032e8265e2c9aa743921620.bindTooltip(
+                `<div>
+                     Fährhaus Zons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_defc7c8ea705a8d276f33781e6d7a8d5 = L.marker(
+                [51.14120861030671, 6.816323958996604],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_597db95a5b97b8c17dcacd61f9188741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_defc7c8ea705a8d276f33781e6d7a8d5.setIcon(icon_597db95a5b97b8c17dcacd61f9188741);
+        
+    
+        var popup_68a7f1f8c6310587d98ed8f9847f2da2 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_7021324504e9695069ab6c8b6820de6b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0aG9mIFZhdGVyIFJoZWluIDwvYj48YnIvPk9iZXJzdHJhw59lIDQgNDE1NDEgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy83MTkzMCA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZ2FzdGhvZi12YXRlcnJoZWluLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3Lmdhc3Rob2YtdmF0ZXJyaGVpbi5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_68a7f1f8c6310587d98ed8f9847f2da2.setContent(i_frame_7021324504e9695069ab6c8b6820de6b);
+            
+        
+
+        marker_defc7c8ea705a8d276f33781e6d7a8d5.bindPopup(popup_68a7f1f8c6310587d98ed8f9847f2da2)
+        ;
+
+        
+    
+    
+            marker_defc7c8ea705a8d276f33781e6d7a8d5.bindTooltip(
+                `<div>
+                     Gasthof Vater Rhein
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a257f5e12b76a6630eb2ac0f9d65b958 = L.marker(
+                [51.06660425998899, 6.809851517953335],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_392b92d223ba870629a021b3ae2293e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_a257f5e12b76a6630eb2ac0f9d65b958.setIcon(icon_392b92d223ba870629a021b3ae2293e6);
+        
+    
+        var popup_56131112f2e34dafd2da553b27399f26 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_3df9d6e4ddbc42bae629f2ec19299303 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IdWJpaG9mIDwvYj48YnIvPkRvcmZzdHIuIDM3IDQxNTQwIERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMvMjY5OTkwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5odWJpaG9mLWRvcm1hZ2VuLmRlLyB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5odWJpaG9mLWRvcm1hZ2VuLmRlLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_56131112f2e34dafd2da553b27399f26.setContent(i_frame_3df9d6e4ddbc42bae629f2ec19299303);
+            
+        
+
+        marker_a257f5e12b76a6630eb2ac0f9d65b958.bindPopup(popup_56131112f2e34dafd2da553b27399f26)
+        ;
+
+        
+    
+    
+            marker_a257f5e12b76a6630eb2ac0f9d65b958.bindTooltip(
+                `<div>
+                     Hubihof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d51cad945133f1c81720a33bf8ff3bb = L.marker(
+                [51.09893779702307, 6.812475779597623],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_616b32e4b1d7f05295a3f2348f159913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_9d51cad945133f1c81720a33bf8ff3bb.setIcon(icon_616b32e4b1d7f05295a3f2348f159913);
+        
+    
+        var popup_a9744fbd2f60faefac98bf062fbfb42c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ef3a42cce15cd196f3df6e2ab9f795e1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LbmVjaHRzdGVkZW5lciBIb2YgPC9iPjxici8+S25lY2h0c3RlZGVuZXIgU3RyLiAxMyA0MTU0MCBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMzLzQ0MDg4IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5rbmVjaHRzdGVkZW5lci1ob2YuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cua25lY2h0c3RlZGVuZXItaG9mLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_a9744fbd2f60faefac98bf062fbfb42c.setContent(i_frame_ef3a42cce15cd196f3df6e2ab9f795e1);
+            
+        
+
+        marker_9d51cad945133f1c81720a33bf8ff3bb.bindPopup(popup_a9744fbd2f60faefac98bf062fbfb42c)
+        ;
+
+        
+    
+    
+            marker_9d51cad945133f1c81720a33bf8ff3bb.bindTooltip(
+                `<div>
+                     Knechtstedener Hof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3b5d9f89aaa846596fae1c394f0e0eb = L.marker(
+                [51.09861075299167, 6.876294044183138],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_09807fc7e97e7e11cd89c743a5e9c70e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e3b5d9f89aaa846596fae1c394f0e0eb.setIcon(icon_09807fc7e97e7e11cd89c743a5e9c70e);
+        
+    
+        var popup_5fddd4982e468463f682f950cd6d26b7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ccc93c25e53555ccbc1e4d42b0ec9439 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MYW5kZ2FzdGhhdXMgUGl3aXBwIGltIFJoZWluZmVsZCA8L2I+PGJyLz5IYXVzIFBpd2lwcCAxIDQxNTM5IERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMtMjE5MjI5IDxici8+PGVtPjxhIGhyZWY9aHR0cHM6Ly9oYXVzLXBpd2lwcC5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vaGF1cy1waXdpcHAuZGUvPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_5fddd4982e468463f682f950cd6d26b7.setContent(i_frame_ccc93c25e53555ccbc1e4d42b0ec9439);
+            
+        
+
+        marker_e3b5d9f89aaa846596fae1c394f0e0eb.bindPopup(popup_5fddd4982e468463f682f950cd6d26b7)
+        ;
+
+        
+    
+    
+            marker_e3b5d9f89aaa846596fae1c394f0e0eb.bindTooltip(
+                `<div>
+                     Landgasthaus Piwipp im Rheinfeld
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65d90e4197b0f4f622dd58a5c28a1cfb = L.marker(
+                [51.11043068023511, 6.753356951157673],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_2244527d2d86b250ff6820f1f83ec011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_65d90e4197b0f4f622dd58a5c28a1cfb.setIcon(icon_2244527d2d86b250ff6820f1f83ec011);
+        
+    
+        var popup_4490ae9c46770f4d90989fc083582b0f = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_58f62e3f30281f053037c4c4337b3066 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5NYW5lcyBhbSBCw7ZzY2ggPC9iPjxici8+SW4gw5xja2VyYXRoIDgxIDQxNTQyIERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMvOTE2MzAgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3Lm1hbmVzLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3Lm1hbmVzLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_4490ae9c46770f4d90989fc083582b0f.setContent(i_frame_58f62e3f30281f053037c4c4337b3066);
+            
+        
+
+        marker_65d90e4197b0f4f622dd58a5c28a1cfb.bindPopup(popup_4490ae9c46770f4d90989fc083582b0f)
+        ;
+
+        
+    
+    
+            marker_65d90e4197b0f4f622dd58a5c28a1cfb.bindTooltip(
+                `<div>
+                     Manes am Bösch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e38bbf02e9864d84b36aecacb88193f0 = L.marker(
+                [51.12019888482314, 6.847087018979598],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_2a8d6fc2046cedf76ab7abf81fdf6bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e38bbf02e9864d84b36aecacb88193f0.setIcon(icon_2a8d6fc2046cedf76ab7abf81fdf6bd5);
+        
+    
+        var popup_5efb4a3a314691cbf7509f28a1c643e4 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_29b96b67ea035826b6a8c72f260f61bb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IFBpenplcmlhIE1lZGl0ZXJyYW4gWnVyIFBvc3QgPC9iPjxici8+U2NobG/Dn3N0ci4gNTIgNDE1NDEgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy85MzY2NDAxIDxici8+PGVtPjxhIGhyZWY9aHR0cHM6Ly93d3cubWVkaXRlcnJhbi16dXJwb3N0LmRlLyB0YXJnZXQ9J19ibGFuayc+aHR0cHM6Ly93d3cubWVkaXRlcnJhbi16dXJwb3N0LmRlLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_5efb4a3a314691cbf7509f28a1c643e4.setContent(i_frame_29b96b67ea035826b6a8c72f260f61bb);
+            
+        
+
+        marker_e38bbf02e9864d84b36aecacb88193f0.bindPopup(popup_5efb4a3a314691cbf7509f28a1c643e4)
+        ;
+
+        
+    
+    
+            marker_e38bbf02e9864d84b36aecacb88193f0.bindTooltip(
+                `<div>
+                     Restaurant Pizzeria Mediterran Zur Post
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27ebc3f716593fa239ab2e51bf06072f = L.marker(
+                [51.12245138556755, 6.851357390939397],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_b2790a385fde3fd5fa16a986c23ae35b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_27ebc3f716593fa239ab2e51bf06072f.setIcon(icon_b2790a385fde3fd5fa16a986c23ae35b);
+        
+    
+        var popup_6254db66f56631250ffb7f5c42cdb959 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_28814581bef8a68e4ca997b1a45408ad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Ub3JzY2hlbmtlIDwvYj48YnIvPlJoZWluc3RyLiAzIDQxNTQxIERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMvMjU5OTU1IDxici8+PGVtPjxhIGhyZWY9Z2VzY2hsb3NzZW4gdGFyZ2V0PSdfYmxhbmsnPmdlc2NobG9zc2VuPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_6254db66f56631250ffb7f5c42cdb959.setContent(i_frame_28814581bef8a68e4ca997b1a45408ad);
+            
+        
+
+        marker_27ebc3f716593fa239ab2e51bf06072f.bindPopup(popup_6254db66f56631250ffb7f5c42cdb959)
+        ;
+
+        
+    
+    
+            marker_27ebc3f716593fa239ab2e51bf06072f.bindTooltip(
+                `<div>
+                     Torschenke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df663cf1555594089d7d740586e9a6c9 = L.marker(
+                [51.11701092066252, 6.646216392862298],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_92121ebd6df2f8d50ddb039da053727c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_df663cf1555594089d7d740586e9a6c9.setIcon(icon_92121ebd6df2f8d50ddb039da053727c);
+        
+    
+        var popup_126eb9f7cfea0b425e5f5580dc803dcf = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_95b3abec3732d26b6cafa91a2451c6c7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LbG9zdGVyIExhbmd3YWRlbiA8L2I+PGJyLz5TY2hsb3NzIExhbmd3YWRlbiAxIDQxNTE2IEdyZXZlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgyLTg4MDIwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5rbG9zdGVybGFuZ3dhZGVuLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3Lmtsb3N0ZXJsYW5nd2FkZW4uZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_126eb9f7cfea0b425e5f5580dc803dcf.setContent(i_frame_95b3abec3732d26b6cafa91a2451c6c7);
+            
+        
+
+        marker_df663cf1555594089d7d740586e9a6c9.bindPopup(popup_126eb9f7cfea0b425e5f5580dc803dcf)
+        ;
+
+        
+    
+    
+            marker_df663cf1555594089d7d740586e9a6c9.bindTooltip(
+                `<div>
+                     Kloster Langwaden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87df4f5c6ece6ca0e5588e26ae9e2bc3 = L.marker(
+                [51.123211179462096, 6.658324722004687],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_fc9eb040bb801f487f6eb0772033262c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_87df4f5c6ece6ca0e5588e26ae9e2bc3.setIcon(icon_fc9eb040bb801f487f6eb0772033262c);
+        
+    
+        var popup_36ea6a7d7c4c1917cd52fe2681c1c1ae = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9a2e0d16b665b69c82debc2c93711ea3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TY2hsb3NzIEjDvGxjaHJhdGggPC9iPjxici8+U2NobG9zcyBIw7xsY2hyYXRoIDQxNTE2IEdyZXZlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgyLTgyNDQ0OCA8YnIvPjxlbT48YSBocmVmPWh0dHBzOi8vd3d3LnNjaGxvc3MtaHVlbGNocmF0aC5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vd3d3LnNjaGxvc3MtaHVlbGNocmF0aC5kZS88L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_36ea6a7d7c4c1917cd52fe2681c1c1ae.setContent(i_frame_9a2e0d16b665b69c82debc2c93711ea3);
+            
+        
+
+        marker_87df4f5c6ece6ca0e5588e26ae9e2bc3.bindPopup(popup_36ea6a7d7c4c1917cd52fe2681c1c1ae)
+        ;
+
+        
+    
+    
+            marker_87df4f5c6ece6ca0e5588e26ae9e2bc3.bindTooltip(
+                `<div>
+                     Schloss Hülchrath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_753e8c367e6114ea7b9a87448e8d1401 = L.marker(
+                [51.22585436030423, 6.619032717515116],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_f3088f3762adf7abc64c1f808b611a68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_753e8c367e6114ea7b9a87448e8d1401.setIcon(icon_f3088f3762adf7abc64c1f808b611a68);
+        
+    
+        var popup_03a8642aec049304badc270e997a1a55 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_3015a82b8ee6d66b28942401613ec8ee = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5CcmF1ZXJlaWdhc3RzdMOkdHRlIEZyYW5rZW5oZWltIDwvYj48YnIvPkFtIE5ldW1hcmt0IDQgNDE1NjQgS2FhcnN0IDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEtNjQwMzEgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmZyYW5rZW5oZWltLWthYXJzdC5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5mcmFua2VuaGVpbS1rYWFyc3QuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_03a8642aec049304badc270e997a1a55.setContent(i_frame_3015a82b8ee6d66b28942401613ec8ee);
+            
+        
+
+        marker_753e8c367e6114ea7b9a87448e8d1401.bindPopup(popup_03a8642aec049304badc270e997a1a55)
+        ;
+
+        
+    
+    
+            marker_753e8c367e6114ea7b9a87448e8d1401.bindTooltip(
+                `<div>
+                     Brauereigaststätte Frankenheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8a4bdf1b8e4433371c39b6ac50bcfd5 = L.marker(
+                [51.23072888177872, 6.616969962654925],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_ee952a9e4e1097cffd3887298c787851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e8a4bdf1b8e4433371c39b6ac50bcfd5.setIcon(icon_ee952a9e4e1097cffd3887298c787851);
+        
+    
+        var popup_890b4d410ad815e07f9680624b2ea056 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_80e6f7764bb159bffa141bd8e84433a0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBBbHRlcyBSYXRoYXVzIDwvYj48YnIvPlJhdGhhdXNzdHIuIDMgNDE1NjQgS2FhcnN0IDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEgNzQyODUzNiA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuYWx0ZXNyYXRoYXVzLWthYXJzdC5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuYWx0ZXNyYXRoYXVzLWthYXJzdC5kZS88L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_890b4d410ad815e07f9680624b2ea056.setContent(i_frame_80e6f7764bb159bffa141bd8e84433a0);
+            
+        
+
+        marker_e8a4bdf1b8e4433371c39b6ac50bcfd5.bindPopup(popup_890b4d410ad815e07f9680624b2ea056)
+        ;
+
+        
+    
+    
+            marker_e8a4bdf1b8e4433371c39b6ac50bcfd5.bindTooltip(
+                `<div>
+                     Gaststätte Altes Rathaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48097fbd581d030a7431456e9fd6c8fd = L.marker(
+                [51.21687596536494, 6.612493280528911],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_6c53bf38367aa0a9ef9a58851ec85154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_48097fbd581d030a7431456e9fd6c8fd.setIcon(icon_6c53bf38367aa0a9ef9a58851ec85154);
+        
+    
+        var popup_cb1201314053c2b7640f4ab4bfb16490 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b834e0af2e93244d870644f7bc2a477e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBCaXNjaG9mc2hvZiA8L2I+PGJyLz5Lw7ZuaWdzdHJhw59lIDE4LTI0IDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTY1MjYzIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5iaXNjaG9mc2hvZi1rYWFyc3QuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuYmlzY2hvZnNob2Yta2FhcnN0LmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_cb1201314053c2b7640f4ab4bfb16490.setContent(i_frame_b834e0af2e93244d870644f7bc2a477e);
+            
+        
+
+        marker_48097fbd581d030a7431456e9fd6c8fd.bindPopup(popup_cb1201314053c2b7640f4ab4bfb16490)
+        ;
+
+        
+    
+    
+            marker_48097fbd581d030a7431456e9fd6c8fd.bindTooltip(
+                `<div>
+                     Gaststätte Bischofshof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96fe1d383eff4b66774041e25d7d5117 = L.marker(
+                [51.18989363346984, 6.512454805340587],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_dfc1a0864c11705bd86de00529ca95a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_96fe1d383eff4b66774041e25d7d5117.setIcon(icon_dfc1a0864c11705bd86de00529ca95a3);
+        
+    
+        var popup_211b15f4645f62c313a6b9ac8067471f = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_e27195fa6c69b2fa93e5425e21fcccb9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5CcmF1aGF1cyAiWnVtIGdvbGRlbmVuIEhhbmR3ZXJrIGltIEFua2VyIiA8L2I+PGJyLz5TZWJhc3RpYW51c3N0cmHDn2UgOSA0MTM1MiBLb3JzY2hlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTYxLTI3MDAzOTIgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmJyYXVoYXVzLWtvcnNjaGVuYnJvaWNoLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmJyYXVoYXVzLWtvcnNjaGVuYnJvaWNoLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_211b15f4645f62c313a6b9ac8067471f.setContent(i_frame_e27195fa6c69b2fa93e5425e21fcccb9);
+            
+        
+
+        marker_96fe1d383eff4b66774041e25d7d5117.bindPopup(popup_211b15f4645f62c313a6b9ac8067471f)
+        ;
+
+        
+    
+    
+            marker_96fe1d383eff4b66774041e25d7d5117.bindTooltip(
+                `<div>
+                     Brauhaus "Zum goldenen Handwerk im Anker"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfe2bde3814256e3ecb319db5c0e6903 = L.marker(
+                [51.165878110375125, 6.533425847306144],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_f8cd2b2bedc4c9eb69c1a48cb82d0ad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_bfe2bde3814256e3ecb319db5c0e6903.setIcon(icon_f8cd2b2bedc4c9eb69c1a48cb82d0ad2);
+        
+    
+        var popup_f46ce79d58415b665d3a291068afae93 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9516737323b71823258dfeda641fca3c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0aGF1cyBTdGFwcGVuIDwvYj48YnIvPlN0ZWluaGF1c2VuIDM5IDQxMzUyIEtvcnNjaGVuYnJvaWNoIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxNjYtODgyMjYgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3Lmdhc3RoYXVzLXN0YXBwZW4uZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZ2FzdGhhdXMtc3RhcHBlbi5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_f46ce79d58415b665d3a291068afae93.setContent(i_frame_9516737323b71823258dfeda641fca3c);
+            
+        
+
+        marker_bfe2bde3814256e3ecb319db5c0e6903.bindPopup(popup_f46ce79d58415b665d3a291068afae93)
+        ;
+
+        
+    
+    
+            marker_bfe2bde3814256e3ecb319db5c0e6903.bindTooltip(
+                `<div>
+                     Gasthaus Stappen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7ee713f499ce656dd8285a969e2ceef = L.marker(
+                [51.18887193568634, 6.51912720527279],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_4a36bcaa96a9f852e139904cf39368fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d7ee713f499ce656dd8285a969e2ceef.setIcon(icon_4a36bcaa96a9f852e139904cf39368fb);
+        
+    
+        var popup_eb5f5134ea6086ed6f40547af911be3b = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_985110ae408863b4476d257612618db9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSB6dXIgV2FsZGVzcnVoIDwvYj48YnIvPlBlc2NoZXIgU3RyYcOfZSAxMDIgNDEzNTIgS29yc2NoZW5icm9pY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2MS02NDEzMTcgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3Lnp1ci13YWxkZXNydWguZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuenVyLXdhbGRlc3J1aC5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_eb5f5134ea6086ed6f40547af911be3b.setContent(i_frame_985110ae408863b4476d257612618db9);
+            
+        
+
+        marker_d7ee713f499ce656dd8285a969e2ceef.bindPopup(popup_eb5f5134ea6086ed6f40547af911be3b)
+        ;
+
+        
+    
+    
+            marker_d7ee713f499ce656dd8285a969e2ceef.bindTooltip(
+                `<div>
+                     Gaststätte zur Waldesruh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_456dee9e27dcde1fc960cdf8d0b01093 = L.marker(
+                [51.16661854350966, 6.541587178960504],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_93cebb0bfbadc834b95cec427f4aeacb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_456dee9e27dcde1fc960cdf8d0b01093.setIcon(icon_93cebb0bfbadc834b95cec427f4aeacb);
+        
+    
+        var popup_20b0b01799df1c1bc683c62fde2e9fe4 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a7ade81b6deebdabc3e6825efd3d5aa6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5MaWVkYmVyZ2VyIExhbmRnYXN0aGF1cyA8L2I+PGJyLz5MYW5kc3RyYcOfZSAxOSA0MTM1MiBLb3JzY2hlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTY2LTg3Mjk0IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5sbGdoLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmxsZ2guZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_20b0b01799df1c1bc683c62fde2e9fe4.setContent(i_frame_a7ade81b6deebdabc3e6825efd3d5aa6);
+            
+        
+
+        marker_456dee9e27dcde1fc960cdf8d0b01093.bindPopup(popup_20b0b01799df1c1bc683c62fde2e9fe4)
+        ;
+
+        
+    
+    
+            marker_456dee9e27dcde1fc960cdf8d0b01093.bindTooltip(
+                `<div>
+                     Liedberger Landgasthaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a4e8818df2c024557dc5f1cb049f3ec = L.marker(
+                [51.18500807885758, 6.502183786560267],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_49543470222ffb531207865620e2bc65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_4a4e8818df2c024557dc5f1cb049f3ec.setIcon(icon_49543470222ffb531207865620e2bc65);
+        
+    
+        var popup_2dcdf8f4cc77a524eea2271bdc628327 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ce3b48fa64bc18de735684971d437241 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IFBvc2VpZG9uIDwvYj48YnIvPlJoZXlkdGVyIFN0cmHDn2UgMTEwIDQxMzUyIEtvcnNjaGVuYnJvaWNoIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxNjEtNjExNTMgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LnBvc2VpZG9uLWtvcnNjaGVuYnJvaWNoLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LnBvc2VpZG9uLWtvcnNjaGVuYnJvaWNoLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_2dcdf8f4cc77a524eea2271bdc628327.setContent(i_frame_ce3b48fa64bc18de735684971d437241);
+            
+        
+
+        marker_4a4e8818df2c024557dc5f1cb049f3ec.bindPopup(popup_2dcdf8f4cc77a524eea2271bdc628327)
+        ;
+
+        
+    
+    
+            marker_4a4e8818df2c024557dc5f1cb049f3ec.bindTooltip(
+                `<div>
+                     Restaurant Poseidon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7dd30d4d3634f493746144766109710 = L.marker(
+                [51.17494423076208, 6.611227258413474],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_7f4a72ef242f12f3c1940f6bec575aee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_c7dd30d4d3634f493746144766109710.setIcon(icon_7f4a72ef242f12f3c1940f6bec575aee);
+        
+    
+        var popup_024146e484427fdc5ba5ba8314a20cfb = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_1a100c48225fcbcd7b2604ee2d59f05b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IFJpdHRlcmd1dCBCaXJraG9mIDwvYj48YnIvPlJpdHRlcmd1dCBCaXJraG9mIDQxMzUyIEtvcnNjaGVuYnJvaWNoIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEtMjA2NTM1IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5yZXN0YXVyYW50LWJpcmtob2YuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cucmVzdGF1cmFudC1iaXJraG9mLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_024146e484427fdc5ba5ba8314a20cfb.setContent(i_frame_1a100c48225fcbcd7b2604ee2d59f05b);
+            
+        
+
+        marker_c7dd30d4d3634f493746144766109710.bindPopup(popup_024146e484427fdc5ba5ba8314a20cfb)
+        ;
+
+        
+    
+    
+            marker_c7dd30d4d3634f493746144766109710.bindTooltip(
+                `<div>
+                     Restaurant Rittergut Birkhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b4c847f9009d69a95e05ff089ed1184 = L.marker(
+                [51.171386412509634, 6.648886590777085],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_3ac481c93e06ed7fce95529ce8ae3114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5b4c847f9009d69a95e05ff089ed1184.setIcon(icon_3ac481c93e06ed7fce95529ce8ae3114);
+        
+    
+        var popup_3ac6b3955f1899bfb6044ac27e970557 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c5f6522540d215571acf7135504fd879 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5BbHBlbnBhcmsgTmV1c3MgPC9iPjxici8+QW4gZGVyIFNraWhhbGxlIDEgNDE0NzIgTmV1c3MgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS0xMjQ0LTIyMCA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuYWxwZW5wYXJrLW5ldXNzLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmFscGVucGFyay1uZXVzcy5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_3ac6b3955f1899bfb6044ac27e970557.setContent(i_frame_c5f6522540d215571acf7135504fd879);
+            
+        
+
+        marker_5b4c847f9009d69a95e05ff089ed1184.bindPopup(popup_3ac6b3955f1899bfb6044ac27e970557)
+        ;
+
+        
+    
+    
+            marker_5b4c847f9009d69a95e05ff089ed1184.bindTooltip(
+                `<div>
+                     Alpenpark Neuss
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff392b8317dadb77b9b2530b14020da3 = L.marker(
+                [51.16481630286979, 6.663720424306828],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_fdf060dfdffd2d0bee4db9b58cc13189 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ff392b8317dadb77b9b2530b14020da3.setIcon(icon_fdf060dfdffd2d0bee4db9b58cc13189);
+        
+    
+        var popup_7d844a8eadb7605579ba554f556f8a34 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_0f6cd888791c080a004a4720f1967223 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5GcmFua2VuaGVpbSBCcmF1ZXJlaSA8L2I+PGJyLz5CYWhuaG9mc3RyYcOfZSA1MCA0MTQ3MiBOZXVzcyA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTg1NjkwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5mcmFua2VuaGVpbS1icmF1aGF1cy1ob2x6aGVpbS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5mcmFua2VuaGVpbS1icmF1aGF1cy1ob2x6aGVpbS5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_7d844a8eadb7605579ba554f556f8a34.setContent(i_frame_0f6cd888791c080a004a4720f1967223);
+            
+        
+
+        marker_ff392b8317dadb77b9b2530b14020da3.bindPopup(popup_7d844a8eadb7605579ba554f556f8a34)
+        ;
+
+        
+    
+    
+            marker_ff392b8317dadb77b9b2530b14020da3.bindTooltip(
+                `<div>
+                     Frankenheim Brauerei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c382f76c8c16fea68d5747b61e602df = L.marker(
+                [51.20245026302663, 6.692760133497957],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_8a4ff2bd430dbf46fe050c5241042468 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_8c382f76c8c16fea68d5747b61e602df.setIcon(icon_8a4ff2bd430dbf46fe050c5241042468);
+        
+    
+        var popup_e904f2b5432df694060979b349e3e2f0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9f0389dbc83e1e83054ed8d562433e8a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IYWZlbmJhciA8L2I+PGJyLz5CYXR0ZXJpZXN0ci4gNyA0MTQ2MCBOZXVzcyA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTEyNDk1NzYgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmhhZmVuYmFyLW5ldXNzLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmhhZmVuYmFyLW5ldXNzLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_e904f2b5432df694060979b349e3e2f0.setContent(i_frame_9f0389dbc83e1e83054ed8d562433e8a);
+            
+        
+
+        marker_8c382f76c8c16fea68d5747b61e602df.bindPopup(popup_e904f2b5432df694060979b349e3e2f0)
+        ;
+
+        
+    
+    
+            marker_8c382f76c8c16fea68d5747b61e602df.bindTooltip(
+                `<div>
+                     Hafenbar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7870edf51e48b7b449144eec0be1fe8b = L.marker(
+                [51.222246428634136, 6.628847548881461],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_3381017a2e53ea4854cb2d9a72abe82a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7870edf51e48b7b449144eec0be1fe8b.setIcon(icon_3381017a2e53ea4854cb2d9a72abe82a);
+        
+    
+        var popup_be3af6d5fd46a91ae015a2421be4f321 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_99dca1814339e2df3244a6f6c4fe2e8d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5FbCBUb3Jlcm8gS2FhcnN0IDwvYj48YnIvPkJhZGVuaWFzdHJhw59lIDEzIDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTYwNjMyMDAgPGJyLz48ZW0+PGEgaHJlZj1ubmIgdGFyZ2V0PSdfYmxhbmsnPm5uYjwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_be3af6d5fd46a91ae015a2421be4f321.setContent(i_frame_99dca1814339e2df3244a6f6c4fe2e8d);
+            
+        
+
+        marker_7870edf51e48b7b449144eec0be1fe8b.bindPopup(popup_be3af6d5fd46a91ae015a2421be4f321)
+        ;
+
+        
+    
+    
+            marker_7870edf51e48b7b449144eec0be1fe8b.bindTooltip(
+                `<div>
+                     El Torero Kaarst
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8758d96db33d6ea664217fbea6b9e660 = L.marker(
+                [51.12147128680699, 6.850458879708865],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_7de26ee9ad707e5f67269fd3036d882e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_8758d96db33d6ea664217fbea6b9e660.setIcon(icon_7de26ee9ad707e5f67269fd3036d882e);
+        
+    
+        var popup_f842c6df38bd969e93fcf9d65c72317b = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9f52cb6cdecbd2ba44e270f107de3df7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IZXJiZXJ0J3MgPC9iPjxici8+TXVzZXVtc3RyYcOfZSAxMyA0MTU0MSBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMzLzI4OTU4NjcgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LnJlc3RhdXJhbnQtaGVyYmVydHMuZWF0YnUuY29tIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LnJlc3RhdXJhbnQtaGVyYmVydHMuZWF0YnUuY29tPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_f842c6df38bd969e93fcf9d65c72317b.setContent(i_frame_9f52cb6cdecbd2ba44e270f107de3df7);
+            
+        
+
+        marker_8758d96db33d6ea664217fbea6b9e660.bindPopup(popup_f842c6df38bd969e93fcf9d65c72317b)
+        ;
+
+        
+    
+    
+            marker_8758d96db33d6ea664217fbea6b9e660.bindTooltip(
+                `<div>
+                     Herbert's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d070f1496c1c9f6983afec7443efaa5 = L.marker(
+                [51.21106637142773, 6.579322974287106],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_197c74fdde971193f1b80a0c076e0ffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_4d070f1496c1c9f6983afec7443efaa5.setIcon(icon_197c74fdde971193f1b80a0c076e0ffa);
+        
+    
+        var popup_1784d2f3194f40b01b93cef6a6aff389 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_8ac8fc5576f3f9794ac5e1a9a76e2c1f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBFZmZlcnNob2YgPC9iPjxici8+SGVpZGUgMzcgNDE1NjQgS2FhcnN0IDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEvMTUzNDkyMyA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZWZmZXJzaG9mLmNvbSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5lZmZlcnNob2YuY29tPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_1784d2f3194f40b01b93cef6a6aff389.setContent(i_frame_8ac8fc5576f3f9794ac5e1a9a76e2c1f);
+            
+        
+
+        marker_4d070f1496c1c9f6983afec7443efaa5.bindPopup(popup_1784d2f3194f40b01b93cef6a6aff389)
+        ;
+
+        
+    
+    
+            marker_4d070f1496c1c9f6983afec7443efaa5.bindTooltip(
+                `<div>
+                     Gaststätte Effershof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ade78c084c58475f2291de44c3ee756 = L.marker(
+                [51.03430280742818, 6.682484837823099],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_85da8935efb762bcbf4dad4821d74d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_1ade78c084c58475f2291de44c3ee756.setIcon(icon_85da8935efb762bcbf4dad4821d74d3c);
+        
+    
+        var popup_26fc9078098a68baa9a3f094ee05a209 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_503c1850a6f13f7bc7ed37bdf385ec7d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Ib3RlbCB6dXIgTGluZGUgPC9iPjxici8+TWFya3QgNiA0MTU2OSBSb21tZXJza2lyY2hlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgzLzk1MzkgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmhvdGVsLXp1ci1saW5kZS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5ob3RlbC16dXItbGluZGUuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_26fc9078098a68baa9a3f094ee05a209.setContent(i_frame_503c1850a6f13f7bc7ed37bdf385ec7d);
+            
+        
+
+        marker_1ade78c084c58475f2291de44c3ee756.bindPopup(popup_26fc9078098a68baa9a3f094ee05a209)
+        ;
+
+        
+    
+    
+            marker_1ade78c084c58475f2291de44c3ee756.bindTooltip(
+                `<div>
+                     Hotel zur Linde
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a1efee433e1b72a4d6975d679e7a65 = L.marker(
+                [51.04720141365063, 6.661433835317003],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_f02d479aa4237ade7812dfec236d728f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_25a1efee433e1b72a4d6975d679e7a65.setIcon(icon_f02d479aa4237ade7812dfec236d728f);
+        
+    
+        var popup_5afc31329cb778b6f778039a1e5dfd66 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_dd0f176e372c325a705e0428cd43ccec = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5UcmF0dG9yaWEgMjkgPC9iPjxici8+R3JldmVuYnJvaWNoZXIgU3RyYcOfZSAyOSA0MTU2OSBSb21tZXJza2lyY2hlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgzLzQxMzY2OSA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cudHJhdHRvcmlhMjkuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cudHJhdHRvcmlhMjkuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_5afc31329cb778b6f778039a1e5dfd66.setContent(i_frame_dd0f176e372c325a705e0428cd43ccec);
+            
+        
+
+        marker_25a1efee433e1b72a4d6975d679e7a65.bindPopup(popup_5afc31329cb778b6f778039a1e5dfd66)
+        ;
+
+        
+    
+    
+            marker_25a1efee433e1b72a4d6975d679e7a65.bindTooltip(
+                `<div>
+                     Trattoria 29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11d3b6df37a20627dfd1b7fed4d85baa = L.marker(
+                [51.051223713017976, 6.707003099697122],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_e8d373ad7ec0ffbc62187c6f9be77774 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_11d3b6df37a20627dfd1b7fed4d85baa.setIcon(icon_e8d373ad7ec0ffbc62187c6f9be77774);
+        
+    
+        var popup_092a540dacf2af19d07cd3c102593048 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_7d8ff870cde047c362aff862cd8d0b12 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HaWxsYmFjaCBTY2jDpG5rZSA8L2I+PGJyLz5TZWJhc3RpYW51c3N0cmHDn2UgNzQgNDE1NjkgUm9tbWVyc2tpcmNoZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE4My84MDY2NTUgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmdpbGxiYWNoLXNjaGFlbmtlLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmdpbGxiYWNoLXNjaGFlbmtlLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_092a540dacf2af19d07cd3c102593048.setContent(i_frame_7d8ff870cde047c362aff862cd8d0b12);
+            
+        
+
+        marker_11d3b6df37a20627dfd1b7fed4d85baa.bindPopup(popup_092a540dacf2af19d07cd3c102593048)
+        ;
+
+        
+    
+    
+            marker_11d3b6df37a20627dfd1b7fed4d85baa.bindTooltip(
+                `<div>
+                     Gillbach Schänke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bb41e794a3525ff3ee3dc30b01aa2c2 = L.marker(
+                [51.19830486368164, 6.692864574376554],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_004e726dcebff22698ebc795d0029c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5bb41e794a3525ff3ee3dc30b01aa2c2.setIcon(icon_004e726dcebff22698ebc795d0029c84);
+        
+    
+        var popup_508696924480f35f4b75f2d9c14c5a28 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_12fc8c15950f559af968e562b769c247 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IGFtIE1hcmt0IDwvYj48YnIvPktyw6RtZXJzdHJhw59lIDEgNDE0NjAgTmV1c3MgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS8yMjI5MTYgPGJyLz48ZW0+PGEgaHJlZj1odHRwczovL2JlbGxpc2ltby1jYWZlLXJlc3RhdXJhbnQuZWF0YnUuY29tLz9sYW5nPWRlIHRhcmdldD0nX2JsYW5rJz5odHRwczovL2JlbGxpc2ltby1jYWZlLXJlc3RhdXJhbnQuZWF0YnUuY29tLz9sYW5nPWRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_508696924480f35f4b75f2d9c14c5a28.setContent(i_frame_12fc8c15950f559af968e562b769c247);
+            
+        
+
+        marker_5bb41e794a3525ff3ee3dc30b01aa2c2.bindPopup(popup_508696924480f35f4b75f2d9c14c5a28)
+        ;
+
+        
+    
+    
+            marker_5bb41e794a3525ff3ee3dc30b01aa2c2.bindTooltip(
+                `<div>
+                     Restaurant am Markt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87cf707d545ef0eb1794f1b4257e7292 = L.marker(
+                [51.1984385613892, 6.693695681277368],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_f74f90734b9e0df552363ab34db69e04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_87cf707d545ef0eb1794f1b4257e7292.setIcon(icon_f74f90734b9e0df552363ab34db69e04);
+        
+    
+        var popup_d56255ba53962776db6af6d43ea94802 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_9318db931d83d01745716b8443225bd8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TY2h3YW4gUmVzdGF1cmFudCA8L2I+PGJyLz5NYXJrdCAzNiA0MTQ2MCBOZXVzcyA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLzE3ODMwOTAgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LnNjaHdhbi1yZXN0YXVyYW50LmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LnNjaHdhbi1yZXN0YXVyYW50LmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_d56255ba53962776db6af6d43ea94802.setContent(i_frame_9318db931d83d01745716b8443225bd8);
+            
+        
+
+        marker_87cf707d545ef0eb1794f1b4257e7292.bindPopup(popup_d56255ba53962776db6af6d43ea94802)
+        ;
+
+        
+    
+    
+            marker_87cf707d545ef0eb1794f1b4257e7292.bindTooltip(
+                `<div>
+                     Schwan Restaurant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1dc1c5819059f3352f0fe2174a80c8d = L.marker(
+                [51.158630511961896, 6.852522006368947],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_d45f739dea1198c5bb11aaadd5871f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f1dc1c5819059f3352f0fe2174a80c8d.setIcon(icon_d45f739dea1198c5bb11aaadd5871f67);
+        
+    
+        var popup_e14ed5082a57ec555919ceeb73628c74 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_850c0f386c21f008c9df4e74a36e3b3b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Gw6RocmhhdXMgUGl0dCBKdXBwIDwvYj48YnIvPkdyaW5kIDYgNDE1NDEgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy8yMjAxMjIgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmbDpGhyaGF1cy1waXR0LWp1cHAuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZsOkaHJoYXVzLXBpdHQtanVwcC5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_e14ed5082a57ec555919ceeb73628c74.setContent(i_frame_850c0f386c21f008c9df4e74a36e3b3b);
+            
+        
+
+        marker_f1dc1c5819059f3352f0fe2174a80c8d.bindPopup(popup_e14ed5082a57ec555919ceeb73628c74)
+        ;
+
+        
+    
+    
+            marker_f1dc1c5819059f3352f0fe2174a80c8d.bindTooltip(
+                `<div>
+                     Fährhaus Pitt Jupp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19e6ba347642521d57a3cbd6378ddd9b = L.marker(
+                [51.09316094663534, 6.841603905484837],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_cf260193c67111a286982b884a15f2f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_19e6ba347642521d57a3cbd6378ddd9b.setIcon(icon_cf260193c67111a286982b884a15f2f8);
+        
+    
+        var popup_d8169f70304272a674c92947f61e52a1 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4ec9a5a9798569cb7020731da1a5336f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SYXRza2VsbGVyIERvcm1hZ2VuIDwvYj48YnIvPkvDtmxuZXIgU3RyYcOfZSA4MCA0MTUzOSBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMzLzUwMjI4MDkgPGJyLz48ZW0+PGEgaHJlZj1nZXNjaGxvc3NlbiB0YXJnZXQ9J19ibGFuayc+Z2VzY2hsb3NzZW48L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_d8169f70304272a674c92947f61e52a1.setContent(i_frame_4ec9a5a9798569cb7020731da1a5336f);
+            
+        
+
+        marker_19e6ba347642521d57a3cbd6378ddd9b.bindPopup(popup_d8169f70304272a674c92947f61e52a1)
+        ;
+
+        
+    
+    
+            marker_19e6ba347642521d57a3cbd6378ddd9b.bindTooltip(
+                `<div>
+                     Ratskeller Dormagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4092e3884d5266ebe28c472555c9878 = L.marker(
+                [51.08076251710227, 6.787099001080231],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_4f5e0ddf4c32954c18ff783bf5470abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_a4092e3884d5266ebe28c472555c9878.setIcon(icon_4f5e0ddf4c32954c18ff783bf5470abb);
+        
+    
+        var popup_bd270a467bc140bf37b89205f120b675 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c1b70eed5f19a2923dd6f299eb3243a9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5XYWxkZ2FzdGhvZiBUYW5uZW5idXNjaCA8L2I+PGJyLz5JbSBUYW5uZW5idXNjaCAyIDQxNTQwIERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMvODA2MDYgPGJyLz48ZW0+PGEgaHJlZj1odHRwczovL3d3dy53YWxkZ2FzdGhhdXN0YW5uZW5idXNjaC5kZS8jd2lsbGtvbW1lbiB0YXJnZXQ9J19ibGFuayc+aHR0cHM6Ly93d3cud2FsZGdhc3RoYXVzdGFubmVuYnVzY2guZGUvI3dpbGxrb21tZW48L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_bd270a467bc140bf37b89205f120b675.setContent(i_frame_c1b70eed5f19a2923dd6f299eb3243a9);
+            
+        
+
+        marker_a4092e3884d5266ebe28c472555c9878.bindPopup(popup_bd270a467bc140bf37b89205f120b675)
+        ;
+
+        
+    
+    
+            marker_a4092e3884d5266ebe28c472555c9878.bindTooltip(
+                `<div>
+                     Waldgasthof Tannenbusch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bed5aedf22e7d84da67627eb470eb60 = L.marker(
+                [51.08381019777747, 6.58816954806409],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_cf1dafcbf18320157f656a93d630391a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0bed5aedf22e7d84da67627eb470eb60.setIcon(icon_cf1dafcbf18320157f656a93d630391a);
+        
+    
+        var popup_ffe325402d0b6dff44b37ceca3f0ee4b = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b2a4b6d175795df12e5bfa0da46b45d6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Fdml0YSBCZWFjaCA8L2I+PGJyLz5BbSBGbHV0Z3JhYmVuIDQxNTE1IEdyZXZlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAxNzAtOTY2MDkzMyA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZXZpdGFiZWFjaC5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5ldml0YWJlYWNoLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_ffe325402d0b6dff44b37ceca3f0ee4b.setContent(i_frame_b2a4b6d175795df12e5bfa0da46b45d6);
+            
+        
+
+        marker_0bed5aedf22e7d84da67627eb470eb60.bindPopup(popup_ffe325402d0b6dff44b37ceca3f0ee4b)
+        ;
+
+        
+    
+    
+            marker_0bed5aedf22e7d84da67627eb470eb60.bindTooltip(
+                `<div>
+                     Evita Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18207f56e9387f0a01d60aed7d8519b7 = L.marker(
+                [51.23398909061005, 6.616803751662683],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_5d491e3759bf8ce3a01a5e1ab3e8f20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_18207f56e9387f0a01d60aed7d8519b7.setIcon(icon_5d491e3759bf8ce3a01a5e1ab3e8f20a);
+        
+    
+        var popup_f1ff751d12f2083ddd402cc3b34dc39d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c357552beb772a933ffa1d7ba363e151 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBEZXV0c2NoZXMgSGF1cyA8L2I+PGJyLz5LYWlzZXItS2FybC1TdHIuMyA0MTU2NCBLYWFyc3QgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMSA2MDMwNTkgPGJyLz48ZW0+PGEgaHJlZj1odHRwczovL3d3dy5kZXV0c2NoZXNoYXVzLWthYXJzdC5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vd3d3LmRldXRzY2hlc2hhdXMta2FhcnN0LmRlLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_f1ff751d12f2083ddd402cc3b34dc39d.setContent(i_frame_c357552beb772a933ffa1d7ba363e151);
+            
+        
+
+        marker_18207f56e9387f0a01d60aed7d8519b7.bindPopup(popup_f1ff751d12f2083ddd402cc3b34dc39d)
+        ;
+
+        
+    
+    
+            marker_18207f56e9387f0a01d60aed7d8519b7.bindTooltip(
+                `<div>
+                     Gaststätte Deutsches Haus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04dea4d756cb42bc1042dda252c02335 = L.marker(
+                [51.16363605866121, 6.541136837250423],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_82bb26bd677687fda1cfaa3f8eff51d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_04dea4d756cb42bc1042dda252c02335.setIcon(icon_82bb26bd677687fda1cfaa3f8eff51d8);
+        
+    
+        var popup_5e030fe52285f5d44765d0427aed80d0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_2dbce1f866220f981aa5c929527d0080 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBWZW5uZW4gPC9iPjxici8+QW0gTWFya3QgNSA0MTM1MiBLb3JzY2hlbmJyb2ljaCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTY2LTgxNTE4IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5pbS1hbHRlbi1icmF1aGF1cy5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5pbS1hbHRlbi1icmF1aGF1cy5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_5e030fe52285f5d44765d0427aed80d0.setContent(i_frame_2dbce1f866220f981aa5c929527d0080);
+            
+        
+
+        marker_04dea4d756cb42bc1042dda252c02335.bindPopup(popup_5e030fe52285f5d44765d0427aed80d0)
+        ;
+
+        
+    
+    
+            marker_04dea4d756cb42bc1042dda252c02335.bindTooltip(
+                `<div>
+                     Gaststätte Vennen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8e359ad5e0051054a04e43b23931bd0 = L.marker(
+                [51.18314188266331, 6.499765063287047],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_deae63736bebbd337f47f6b87b8b3fbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e8e359ad5e0051054a04e43b23931bd0.setIcon(icon_deae63736bebbd337f47f6b87b8b3fbf);
+        
+    
+        var popup_62dbd079e85eb2f04766221bb377e7c7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_6eda6dee3110ad652c210e2ede450650 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5QaWNrbmljay1CaWVyZ2FydGVuIGJlaSBCb2x0ZW4gPC9iPjxici8+UmhleWR0ZXIgU3RyLiAxMzggNDEzNTIgS29yc2NoZW5icm9pY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2MS02MTc5MDAgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmJvbHRlbi1icmF1ZXJlaS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5ib2x0ZW4tYnJhdWVyZWkuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_62dbd079e85eb2f04766221bb377e7c7.setContent(i_frame_6eda6dee3110ad652c210e2ede450650);
+            
+        
+
+        marker_e8e359ad5e0051054a04e43b23931bd0.bindPopup(popup_62dbd079e85eb2f04766221bb377e7c7)
+        ;
+
+        
+    
+    
+            marker_e8e359ad5e0051054a04e43b23931bd0.bindTooltip(
+                `<div>
+                     Picknick-Biergarten bei Bolten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1136005c3fd0db1e58410311f6542f7b = L.marker(
+                [51.19098124825627, 6.515445990514745],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_0244d7e51470ffd7d6a28b81923ce24a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_1136005c3fd0db1e58410311f6542f7b.setIcon(icon_0244d7e51470ffd7d6a28b81923ce24a);
+        
+    
+        var popup_8daf10609d469f2046122ba9ad7c9d88 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_de44625845ae096bcb2459fd51d9a105 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IE5lZmVsaSA8L2I+PGJyLz5TdGVpbnN0cmHDn2UgMjUgNDEzNTIgS29yc2NoZW5icm9pY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2MS00MDI4NjMgPGJyLz48ZW0+PGEgaHJlZj1odHRwczovL3d3dy5uZWZlbGkta29yc2NoZW5icm9pY2guZGUvIHRhcmdldD0nX2JsYW5rJz5odHRwczovL3d3dy5uZWZlbGkta29yc2NoZW5icm9pY2guZGUvPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_8daf10609d469f2046122ba9ad7c9d88.setContent(i_frame_de44625845ae096bcb2459fd51d9a105);
+            
+        
+
+        marker_1136005c3fd0db1e58410311f6542f7b.bindPopup(popup_8daf10609d469f2046122ba9ad7c9d88)
+        ;
+
+        
+    
+    
+            marker_1136005c3fd0db1e58410311f6542f7b.bindTooltip(
+                `<div>
+                     Restaurant Nefeli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db394b4877852b8295bdf368d24e639a = L.marker(
+                [51.0346265856116, 6.684583452114762],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_3d9c244fed560716516653b6f83b5d6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_db394b4877852b8295bdf368d24e639a.setIcon(icon_3d9c244fed560716516653b6f83b5d6e);
+        
+    
+        var popup_7abd33ee495f5298b06e35b5acf3575d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_4c6ba7d8bc24084c80708e66b6fc025e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Eb20gRWNrIDwvYj48YnIvPlZlbmxvZXIgU3RyLiA3MSA0MTU2OSBSb21tZXJza2lyY2hlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgzLTgwNjcwNCA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZG9tLWVjay5jb20gdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZG9tLWVjay5jb208L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_7abd33ee495f5298b06e35b5acf3575d.setContent(i_frame_4c6ba7d8bc24084c80708e66b6fc025e);
+            
+        
+
+        marker_db394b4877852b8295bdf368d24e639a.bindPopup(popup_7abd33ee495f5298b06e35b5acf3575d)
+        ;
+
+        
+    
+    
+            marker_db394b4877852b8295bdf368d24e639a.bindTooltip(
+                `<div>
+                     Dom Eck
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7216a8ef7b08b87802bce58e7a85cbd3 = L.marker(
+                [51.09661226025183, 6.838431651187966],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_87a0df0adc47506c855e187b35dbb7ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7216a8ef7b08b87802bce58e7a85cbd3.setIcon(icon_87a0df0adc47506c855e187b35dbb7ff);
+        
+    
+        var popup_816c8445a7f8bb74b320c4511c95c9c0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_ebb8b2b9702f30e4dbcdace212891d1e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Iw7Z0dGNoZSA8L2I+PGJyLz5LcmVmZWxkZXIgU3RyYcOfZSAxNCAtMTggNDE1MzkgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy8yNTMwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5ob2V0dGNoZS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5ob2V0dGNoZS5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_816c8445a7f8bb74b320c4511c95c9c0.setContent(i_frame_ebb8b2b9702f30e4dbcdace212891d1e);
+            
+        
+
+        marker_7216a8ef7b08b87802bce58e7a85cbd3.bindPopup(popup_816c8445a7f8bb74b320c4511c95c9c0)
+        ;
+
+        
+    
+    
+            marker_7216a8ef7b08b87802bce58e7a85cbd3.bindTooltip(
+                `<div>
+                     Höttche
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c33a71a7096201b1ca80f40f5f7c23b = L.marker(
+                [51.23003420331796, 6.600040908584868],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_0cbbfafd6b4302dc3d9e1a0ea53d75fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_2c33a71a7096201b1ca80f40f5f7c23b.setIcon(icon_0cbbfafd6b4302dc3d9e1a0ea53d75fe);
+        
+    
+        var popup_ec24a4fec8c30c5e7a183c2f3ea272f5 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_015881d46af9c1ec1648a9706013e042 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IYXVzIEJyb2ljaGVyZG9yZiA8L2I+PGJyLz5Ccm9pY2hlcmRvcmZzdHJhw59lIDU3IDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLzY1OTQ5IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5oYXVzLWJyb2ljaGVyZG9yZi5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5oYXVzLWJyb2ljaGVyZG9yZi5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_ec24a4fec8c30c5e7a183c2f3ea272f5.setContent(i_frame_015881d46af9c1ec1648a9706013e042);
+            
+        
+
+        marker_2c33a71a7096201b1ca80f40f5f7c23b.bindPopup(popup_ec24a4fec8c30c5e7a183c2f3ea272f5)
+        ;
+
+        
+    
+    
+            marker_2c33a71a7096201b1ca80f40f5f7c23b.bindTooltip(
+                `<div>
+                     Haus Broicherdorf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fb760a76bf8308b5d4edc0a4c7e5ab1 = L.marker(
+                [51.225452482944455, 6.620459144576023],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_cd047633c6fbb7895775ba4ea78ec4d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0fb760a76bf8308b5d4edc0a4c7e5ab1.setIcon(icon_cd047633c6fbb7895775ba4ea78ec4d5);
+        
+    
+        var popup_6dd4a3af3013082573d61bda688121dd = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_bcf11d0410fadcb1175c0d07a6b3956b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5QYXBhbGFQdWIgPC9iPjxici8+QW0gTmV1bWFya3QgMSA0MTU2NCBLYWFyc3QgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS82Njk2OTEgPGJyLz48ZW0+PGEgaHJlZj1odHRwOy8vd3d3LnBhcGFsYXB1Yi1rYWFyc3QuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA7Ly93d3cucGFwYWxhcHViLWthYXJzdC5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_6dd4a3af3013082573d61bda688121dd.setContent(i_frame_bcf11d0410fadcb1175c0d07a6b3956b);
+            
+        
+
+        marker_0fb760a76bf8308b5d4edc0a4c7e5ab1.bindPopup(popup_6dd4a3af3013082573d61bda688121dd)
+        ;
+
+        
+    
+    
+            marker_0fb760a76bf8308b5d4edc0a4c7e5ab1.bindTooltip(
+                `<div>
+                     PapalaPub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71e9f2b853f02399d62e6a1aad223456 = L.marker(
+                [51.092310658283616, 6.690097720715721],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_fd9413fadf63c55dddee3e27dadf744e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_71e9f2b853f02399d62e6a1aad223456.setIcon(icon_fd9413fadf63c55dddee3e27dadf744e);
+        
+    
+        var popup_6e9ba5601f49e67b199c174e97868dc0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b9d11ebfd7a499661cdf9eadd557ff72 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Ib2VuaW5nZXIgSG9mIDwvYj48YnIvPlN0ZXBoYW51c3N0cmHDn2UgNyA0MTU2OSBSb21tZXJza2lyY2hlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAxNzIgNjQ0NTUwOCA8YnIvPjxlbT48YSBocmVmPWh0dHBzOi8vaG9lbmluZ2VyLWhvZi45Z2cuZGUvIHRhcmdldD0nX2JsYW5rJz5odHRwczovL2hvZW5pbmdlci1ob2YuOWdnLmRlLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_6e9ba5601f49e67b199c174e97868dc0.setContent(i_frame_b9d11ebfd7a499661cdf9eadd557ff72);
+            
+        
+
+        marker_71e9f2b853f02399d62e6a1aad223456.bindPopup(popup_6e9ba5601f49e67b199c174e97868dc0)
+        ;
+
+        
+    
+    
+            marker_71e9f2b853f02399d62e6a1aad223456.bindTooltip(
+                `<div>
+                     Hoeninger Hof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_725c239c2c3d6341299242543fbb0184 = L.marker(
+                [51.03123565719278, 6.695552943683869],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_9c9ebb0824d69fbe477b0d165b2c51b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_725c239c2c3d6341299242543fbb0184.setIcon(icon_9c9ebb0824d69fbe477b0d165b2c51b7);
+        
+    
+        var popup_0e6fbe6b5c410e150b34a666242c14b4 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_e2c00dd465aa8d0aa7ae2c0870a9ab04 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5DYWdyYXMgUGFyYWRpZXMgPC9iPjxici8+VmVubG9lciBTdHJhw59lIDYgNDE1NjkgUm9tbWVyc2tpcmNoZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE4My80NzE0ODkgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmNhZ3Jhcy1wYXJhZGllcy5lYXRidS5jb20gdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuY2FncmFzLXBhcmFkaWVzLmVhdGJ1LmNvbTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_0e6fbe6b5c410e150b34a666242c14b4.setContent(i_frame_e2c00dd465aa8d0aa7ae2c0870a9ab04);
+            
+        
+
+        marker_725c239c2c3d6341299242543fbb0184.bindPopup(popup_0e6fbe6b5c410e150b34a666242c14b4)
+        ;
+
+        
+    
+    
+            marker_725c239c2c3d6341299242543fbb0184.bindTooltip(
+                `<div>
+                     Cagras Paradies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d4aaabfd219629e71646b70e0ce38c7 = L.marker(
+                [51.18414493212902, 6.530328115765738],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_ef50c721edc7453a14e2958baa0b64c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5d4aaabfd219629e71646b70e0ce38c7.setIcon(icon_ef50c721edc7453a14e2958baa0b64c7);
+        
+    
+        var popup_08565a1c6e6dda1a245738c2de319fda = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_a458dc3efbc33948003c77cfeef6cf1b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IElsIENvcnRpbGUgPC9iPjxici8+S2xlaW5lbmJyb2ljaGVyIFN0cmHDn2UgMWEgNDEzNTIgS29yc2NoZW5icm9pY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS8yNzA0NjQ2IDxici8+PGVtPjxhIGhyZWY9aHR0cHM6Ly9yaXN0b3JhbnRlLWlsY29ydGlsZS5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vcmlzdG9yYW50ZS1pbGNvcnRpbGUuZGUvPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_08565a1c6e6dda1a245738c2de319fda.setContent(i_frame_a458dc3efbc33948003c77cfeef6cf1b);
+            
+        
+
+        marker_5d4aaabfd219629e71646b70e0ce38c7.bindPopup(popup_08565a1c6e6dda1a245738c2de319fda)
+        ;
+
+        
+    
+    
+            marker_5d4aaabfd219629e71646b70e0ce38c7.bindTooltip(
+                `<div>
+                     Restaurant Il Cortile
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f13c90924347da98595bd1d27a871d5 = L.marker(
+                [51.200184873397696, 6.696301153918325],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_b78ef3a7eba5655c1ac4ecc4c12c9989 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7f13c90924347da98595bd1d27a871d5.setIcon(icon_b78ef3a7eba5655c1ac4ecc4c12c9989);
+        
+    
+        var popup_1733fa729cbe258a8e45a387ae814d84 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b9038706933e31050376bbcda9ac2e7f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5IYWZlbmxpZWJlIDwvYj48YnIvPkFtIFpvbGxoYWZlbiA3IDQxNDYwIE5ldXNzIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEvMTc4NDEyMCA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuaGFmZW5saWViZS1uZXVzcy5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5oYWZlbmxpZWJlLW5ldXNzLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_1733fa729cbe258a8e45a387ae814d84.setContent(i_frame_b9038706933e31050376bbcda9ac2e7f);
+            
+        
+
+        marker_7f13c90924347da98595bd1d27a871d5.bindPopup(popup_1733fa729cbe258a8e45a387ae814d84)
+        ;
+
+        
+    
+    
+            marker_7f13c90924347da98595bd1d27a871d5.bindTooltip(
+                `<div>
+                     Hafenliebe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb9444aecbc4bf29a9b6fdf5bb1bddc5 = L.marker(
+                [51.10334671419935, 6.718727388235132],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_0ed40ad17624f9a149638d6e434aa24c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_cb9444aecbc4bf29a9b6fdf5bb1bddc5.setIcon(icon_0ed40ad17624f9a149638d6e434aa24c);
+        
+    
+        var popup_8c365c900b3072afd02e01a7be6e86e9 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_aafccc382bdef3ea5d19bc3e68b9935c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Hb2hyZXIgTGFuZGdhc3RoYXVzIDwvYj48YnIvPktpcmNocGxhdHogNyA0MTU0MiBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTgyLzg3MTAyNDIgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmdvaHJlci1sYW5kZ2FzdGhhdXMuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZ29ocmVyLWxhbmRnYXN0aGF1cy5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_8c365c900b3072afd02e01a7be6e86e9.setContent(i_frame_aafccc382bdef3ea5d19bc3e68b9935c);
+            
+        
+
+        marker_cb9444aecbc4bf29a9b6fdf5bb1bddc5.bindPopup(popup_8c365c900b3072afd02e01a7be6e86e9)
+        ;
+
+        
+    
+    
+            marker_cb9444aecbc4bf29a9b6fdf5bb1bddc5.bindTooltip(
+                `<div>
+                     Gohrer Landgasthaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3696739350a5f3d97e66a5438615ed18 = L.marker(
+                [51.0765154620926, 6.757499197736642],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_d9bd4addcb73962e0e47cb71c47cf790 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_3696739350a5f3d97e66a5438615ed18.setIcon(icon_d9bd4addcb73962e0e47cb71c47cf790);
+        
+    
+        var popup_39892e189e1c041f10c97b7a399bd4d8 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_da0fb899e32f35af9d00423222eb3b30 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5LbG9zdGVyaG9mIEtuZWNodHN0ZWRlbiA8L2I+PGJyLz5FY2tlIFdpbmFuZC1LYXlzZXItU3RyYcOfZS9LbG9zdGVyYWxsZWUgMSA0MTU0MCBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMzLTgwNzQ1IDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5rbG9zdGVyaG9mLWtuZWNodHN0ZWRlbi5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5rbG9zdGVyaG9mLWtuZWNodHN0ZWRlbi5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_39892e189e1c041f10c97b7a399bd4d8.setContent(i_frame_da0fb899e32f35af9d00423222eb3b30);
+            
+        
+
+        marker_3696739350a5f3d97e66a5438615ed18.bindPopup(popup_39892e189e1c041f10c97b7a399bd4d8)
+        ;
+
+        
+    
+    
+            marker_3696739350a5f3d97e66a5438615ed18.bindTooltip(
+                `<div>
+                     Klosterhof Knechtsteden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6c18feb322bfcfe40e3d7b097017611 = L.marker(
+                [51.12205024295807, 6.849464752404244],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_d49dafed0d3d1418fec002d69077697a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e6c18feb322bfcfe40e3d7b097017611.setIcon(icon_d49dafed0d3d1418fec002d69077697a);
+        
+    
+        var popup_b90068a2be7fb0ae7deafeba83e1d0ef = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_3e4da2871bc2234f4526b91ac688257f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TY2hsb3NzIERlc3RpbGxlIDwvYj48YnIvPk1hdWVyc3RyLiAyNiBhIDQxNTQxIERvcm1hZ2VuIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzMvNDc2NTggPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LnNjaGxvc3NkZXN0aWxsZS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5zY2hsb3NzZGVzdGlsbGUuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_b90068a2be7fb0ae7deafeba83e1d0ef.setContent(i_frame_3e4da2871bc2234f4526b91ac688257f);
+            
+        
+
+        marker_e6c18feb322bfcfe40e3d7b097017611.bindPopup(popup_b90068a2be7fb0ae7deafeba83e1d0ef)
+        ;
+
+        
+    
+    
+            marker_e6c18feb322bfcfe40e3d7b097017611.bindTooltip(
+                `<div>
+                     Schloss Destille
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f75e19b95011724e3c393a5e259a74e3 = L.marker(
+                [51.12319624648797, 6.850854355200859],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_620599861ae1afcea8ef423a1864ea63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f75e19b95011724e3c393a5e259a74e3.setIcon(icon_620599861ae1afcea8ef423a1864ea63);
+        
+    
+        var popup_ffe2262ca983ade6e7a95afd8055985c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_d3bae6a4d2e6e84bc786688a2ae8edc2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50ICJadW0gVm9sa3NnYXJ0ZW4iIDwvYj48YnIvPlBhcmtzdHJhw59lIDIgNDE1NDEgRG9ybWFnZW4gPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMy01MDMwIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5mcmllZGVzdHJvbS5kZSB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy5mcmllZGVzdHJvbS5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_ffe2262ca983ade6e7a95afd8055985c.setContent(i_frame_d3bae6a4d2e6e84bc786688a2ae8edc2);
+            
+        
+
+        marker_f75e19b95011724e3c393a5e259a74e3.bindPopup(popup_ffe2262ca983ade6e7a95afd8055985c)
+        ;
+
+        
+    
+    
+            marker_f75e19b95011724e3c393a5e259a74e3.bindTooltip(
+                `<div>
+                     Restaurant "Zum Volksgarten"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e198a3f20d3ea1be8613299d0b591e3 = L.marker(
+                [51.123409175245385, 6.850570878546927],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_cb98b7a9b6d4d8d5a84f2d081c9a488e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_3e198a3f20d3ea1be8613299d0b591e3.setIcon(icon_cb98b7a9b6d4d8d5a84f2d081c9a488e);
+        
+    
+        var popup_fd17c42ed1c3a3c2603c8dbe069ddc0d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_cdb72bb7714f5e4367757aa1f9a54952 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5TdHJhdG9zIERpbmluZyA8L2I+PGJyLz5IZXJyZW53ZWcgMSA0MTU0MSBEb3JtYWdlbiA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMzLzQ1MDcxMSA8YnIvPjxlbT48YSBocmVmPWh0dHBzOi8vc3RyYXRvcy1kaW5pbmctem9ucy5kZS8gdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vc3RyYXRvcy1kaW5pbmctem9ucy5kZS88L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_fd17c42ed1c3a3c2603c8dbe069ddc0d.setContent(i_frame_cdb72bb7714f5e4367757aa1f9a54952);
+            
+        
+
+        marker_3e198a3f20d3ea1be8613299d0b591e3.bindPopup(popup_fd17c42ed1c3a3c2603c8dbe069ddc0d)
+        ;
+
+        
+    
+    
+            marker_3e198a3f20d3ea1be8613299d0b591e3.bindTooltip(
+                `<div>
+                     Stratos Dining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52a30056f5c55341cc7bd0f2f08fde2e = L.marker(
+                [51.227175585133146, 6.621007178177905],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_6998bd3fb6264249615e6ba551619710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_52a30056f5c55341cc7bd0f2f08fde2e.setIcon(icon_6998bd3fb6264249615e6ba551619710);
+        
+    
+        var popup_7871a01ba7866b54ed58e06835fd7cf7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_73e975dc2d041cd854a5620cb8acc985 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5EaW9ueXNvcyA8L2I+PGJyLz5NYXViaXNzdHJhw59lIDQ2IDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLzY1MjMwIDxici8+PGVtPjxhIGhyZWY9aHR0cHM6Ly9kaW9ueXNvcy1rYWFyc3QuZWF0YnUuY29tLz9sYW5nPWRlIHRhcmdldD0nX2JsYW5rJz5odHRwczovL2Rpb255c29zLWthYXJzdC5lYXRidS5jb20vP2xhbmc9ZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_7871a01ba7866b54ed58e06835fd7cf7.setContent(i_frame_73e975dc2d041cd854a5620cb8acc985);
+            
+        
+
+        marker_52a30056f5c55341cc7bd0f2f08fde2e.bindPopup(popup_7871a01ba7866b54ed58e06835fd7cf7)
+        ;
+
+        
+    
+    
+            marker_52a30056f5c55341cc7bd0f2f08fde2e.bindTooltip(
+                `<div>
+                     Dionysos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26edebd610b47cb76d5d8ab73610a2e8 = L.marker(
+                [51.20706979741794, 6.521551349876191],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_8670153dc30556690232b6a4705e1ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_26edebd610b47cb76d5d8ab73610a2e8.setIcon(icon_8670153dc30556690232b6a4705e1ebe);
+        
+    
+        var popup_da08998b7a684480c071a5b48c0e4a8b = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_608e032f40f9e827a594ca9028aff9fc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5HYXN0c3TDpHR0ZSBadW0gYWx0ZW4gQnJhdWhhdXMgPC9iPjxici8+UmFkZXJicm9pY2ggMTMgNDEzNTIgS29yc2NoZW5icm9pY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE2MS05OTk1NTUyIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy56dW0tYWx0ZW4tYnJhdWhhdXMuY29tLyB0YXJnZXQ9J19ibGFuayc+aHR0cDovL3d3dy56dW0tYWx0ZW4tYnJhdWhhdXMuY29tLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_da08998b7a684480c071a5b48c0e4a8b.setContent(i_frame_608e032f40f9e827a594ca9028aff9fc);
+            
+        
+
+        marker_26edebd610b47cb76d5d8ab73610a2e8.bindPopup(popup_da08998b7a684480c071a5b48c0e4a8b)
+        ;
+
+        
+    
+    
+            marker_26edebd610b47cb76d5d8ab73610a2e8.bindTooltip(
+                `<div>
+                     Gaststätte Zum alten Brauhaus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad75e1e99ccaf3ae86dc79b9e0a733dd = L.marker(
+                [51.30136016275234, 6.631113128196229],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_21f9e2785f50c87383cfebeee84ca5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ad75e1e99ccaf3ae86dc79b9e0a733dd.setIcon(icon_21f9e2785f50c87383cfebeee84ca5e7);
+        
+    
+        var popup_3e0681272b9ec7861e0ebfa99d279b12 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_82f5949fa144dd004c08ea3e3b5cbc0c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Cw7ZzaW5nZXJob2YgPC9iPjxici8+QsO2c2luZ2hvdmVuZXIgU3RyYcOfZSA1MSA0MDY2OCBNZWVyYnVzY2ggPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjE1OS02MDAxIDxici8+PGVtPjxhIGhyZWY9aHR0cDovL3d3dy5ib2VzaW5nZXItaG9mLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmJvZXNpbmdlci1ob2YuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_3e0681272b9ec7861e0ebfa99d279b12.setContent(i_frame_82f5949fa144dd004c08ea3e3b5cbc0c);
+            
+        
+
+        marker_ad75e1e99ccaf3ae86dc79b9e0a733dd.bindPopup(popup_3e0681272b9ec7861e0ebfa99d279b12)
+        ;
+
+        
+    
+    
+            marker_ad75e1e99ccaf3ae86dc79b9e0a733dd.bindTooltip(
+                `<div>
+                     Bösingerhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b9b12353b7c3dcbd7daf9d199d22ac4 = L.marker(
+                [51.19832417109752, 6.687910811215955],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_9b34f6b044cecfdb57f55bb2814e873a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_9b9b12353b7c3dcbd7daf9d199d22ac4.setIcon(icon_9b34f6b044cecfdb57f55bb2814e873a);
+        
+    
+        var popup_1fbd7f90602afef4150a50f1af6529b7 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_182c118c6c93bec507ca827f74fcca3e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5EcnVzdXNob2YgPC9iPjxici8+RXJmdHN0cmHDn2UgNTggNDE0NjAgTmV1c3MgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS0yMTU5MiA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZHJ1c3VzaG9mLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LmRydXN1c2hvZi5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_1fbd7f90602afef4150a50f1af6529b7.setContent(i_frame_182c118c6c93bec507ca827f74fcca3e);
+            
+        
+
+        marker_9b9b12353b7c3dcbd7daf9d199d22ac4.bindPopup(popup_1fbd7f90602afef4150a50f1af6529b7)
+        ;
+
+        
+    
+    
+            marker_9b9b12353b7c3dcbd7daf9d199d22ac4.bindTooltip(
+                `<div>
+                     Drusushof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dda8c2e66ebd44ecb644b9045cd65309 = L.marker(
+                [51.19686172532917, 6.692002137644793],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_9131fedd45234190733b4b2fcd5dd4ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_dda8c2e66ebd44ecb644b9045cd65309.setIcon(icon_9131fedd45234190733b4b2fcd5dd4ce);
+        
+    
+        var popup_221f67701f0f1bbad3e2df9e29e4427c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_b4666bfefec371eb443c58362353147b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5XZWnDn2VzIEhhdXMgPC9iPjxici8+TWljaGFlbHN0cmHDn2UgNjUgNDE0NjAgTmV1c3MgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS0yNzc4NjkgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LndlaXNzZXNoYXVzLW5ldXNzLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LndlaXNzZXNoYXVzLW5ldXNzLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_221f67701f0f1bbad3e2df9e29e4427c.setContent(i_frame_b4666bfefec371eb443c58362353147b);
+            
+        
+
+        marker_dda8c2e66ebd44ecb644b9045cd65309.bindPopup(popup_221f67701f0f1bbad3e2df9e29e4427c)
+        ;
+
+        
+    
+    
+            marker_dda8c2e66ebd44ecb644b9045cd65309.bindTooltip(
+                `<div>
+                     Weißes Haus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_180b1bd1a12509412211fb64ef15bd3e = L.marker(
+                [51.197659888766246, 6.604868178981831],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_6ba38bdb4164a6b18a2ed968ede4a21c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_180b1bd1a12509412211fb64ef15bd3e.setIcon(icon_6ba38bdb4164a6b18a2ed968ede4a21c);
+        
+    
+        var popup_a0e273cd0c27703559689a0e1f7f373d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_efcfe4aa0802b379816148cda7c54b12 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SaXN0b3JhbnRlIFRvc2NhbmEgPC9iPjxici8+TWF0dGhpYXNzdHJhw59lIDE0IDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLTE1MzMxOTEgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LmFsYmVyZ28tdG9zY2FuYS5uZXQgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuYWxiZXJnby10b3NjYW5hLm5ldDwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_a0e273cd0c27703559689a0e1f7f373d.setContent(i_frame_efcfe4aa0802b379816148cda7c54b12);
+            
+        
+
+        marker_180b1bd1a12509412211fb64ef15bd3e.bindPopup(popup_a0e273cd0c27703559689a0e1f7f373d)
+        ;
+
+        
+    
+    
+            marker_180b1bd1a12509412211fb64ef15bd3e.bindTooltip(
+                `<div>
+                     Ristorante Toscana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20a2a4a39a73c6f1f699a1a00d6de753 = L.marker(
+                [51.23393633135423, 6.617823696392803],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_026285718a340c86617cf98e1dc0324a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_20a2a4a39a73c6f1f699a1a00d6de753.setIcon(icon_026285718a340c86617cf98e1dc0324a);
+        
+    
+        var popup_a9d51bf74aafff0c82342b23cd4f7b2d = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_1125cf0c2065b33c49c99c05cd2576ba = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IENhdmEgPC9iPjxici8+S2Fpc2VyLUthcmwtU3RyLiAyIDQxNTY0IEthYXJzdCA8YnIvPjxici8+PGI+VGVsZWZvbjo8L2I+IDAyMTMxLzE1MTk5NjQgPGJyLz48ZW0+PGEgaHJlZj1odHRwOi8vd3d3LnJlc3RhdXJhbnRjYXZhLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3LnJlc3RhdXJhbnRjYXZhLmRlPC9lbT48YnIvPg==" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_a9d51bf74aafff0c82342b23cd4f7b2d.setContent(i_frame_1125cf0c2065b33c49c99c05cd2576ba);
+            
+        
+
+        marker_20a2a4a39a73c6f1f699a1a00d6de753.bindPopup(popup_a9d51bf74aafff0c82342b23cd4f7b2d)
+        ;
+
+        
+    
+    
+            marker_20a2a4a39a73c6f1f699a1a00d6de753.bindTooltip(
+                `<div>
+                     Restaurant Cava
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_036a90c0eecf902560054918b21c9ba7 = L.marker(
+                [51.231324850409145, 6.616950651315141],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_ea0d128597e43815fca16eed3235739f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_036a90c0eecf902560054918b21c9ba7.setIcon(icon_ea0d128597e43815fca16eed3235739f);
+        
+    
+        var popup_bf3f4be35a0e68748b5812babe09251c = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_c5100ec713070e5675378b18f60b2f6a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5QQVZJVE8gPC9iPjxici8+UmF0aGF1c3N0cmHDn2UgMSA0MTU2NCBLYWFyc3QgPGJyLz48YnIvPjxiPlRlbGVmb246PC9iPiAwMjEzMS81Mzk1NjcwIDxici8+PGVtPjxhIGhyZWY9aHR0cHM6Ly93d3cucGF2aXRvLmRlLyB0YXJnZXQ9J19ibGFuayc+aHR0cHM6Ly93d3cucGF2aXRvLmRlLzwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_bf3f4be35a0e68748b5812babe09251c.setContent(i_frame_c5100ec713070e5675378b18f60b2f6a);
+            
+        
+
+        marker_036a90c0eecf902560054918b21c9ba7.bindPopup(popup_bf3f4be35a0e68748b5812babe09251c)
+        ;
+
+        
+    
+    
+            marker_036a90c0eecf902560054918b21c9ba7.bindTooltip(
+                `<div>
+                     PAVITO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ea9320521d723efca0ead123cedf0d4 = L.marker(
+                [51.19872151921208, 6.692511818363173],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_4e977dcc50808036cb7d10dffefa83cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7ea9320521d723efca0ead123cedf0d4.setIcon(icon_4e977dcc50808036cb7d10dffefa83cd);
+        
+    
+        var popup_c510ea473243e47d40b27b761b9029e0 = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_68dcdf6cd674a8ff6ac9a9990d9562b2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5Mb25uZXMgJiBMZXVzY2ggPC9iPjxici8+TcO8bnN0ZXJwbGF0eiAxNSAtIDE3IDQxNDYwIE5ldXNzIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEvMzY3MDAyMiA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cubG9ubmVzdW5kbGV1c2NoLmRlIHRhcmdldD0nX2JsYW5rJz5odHRwOi8vd3d3Lmxvbm5lc3VuZGxldXNjaC5kZTwvZW0+PGJyLz4=" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_c510ea473243e47d40b27b761b9029e0.setContent(i_frame_68dcdf6cd674a8ff6ac9a9990d9562b2);
+            
+        
+
+        marker_7ea9320521d723efca0ead123cedf0d4.bindPopup(popup_c510ea473243e47d40b27b761b9029e0)
+        ;
+
+        
+    
+    
+            marker_7ea9320521d723efca0ead123cedf0d4.bindTooltip(
+                `<div>
+                     Lonnes & Leusch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fca5108ef1625740894c34ce0549dec = L.marker(
+                [51.21708613069213, 6.662339769377718],
+                {}
+            ).addTo(map_695f671981232d1622ca59460ddad014);
+        
+    
+            var icon_bde6e870eff4ba283af8c865265634f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "beer", "iconColor": "black", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_2fca5108ef1625740894c34ce0549dec.setIcon(icon_bde6e870eff4ba283af8c865265634f3);
+        
+    
+        var popup_c4c1ca94fabdd0699ab1025f2da6252f = L.popup({"maxWidth": 1000, "minWidth": 450});
+
+        
+            
+                var i_frame_1f70830ebdea2905948ac4694a945952 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Yj5SZXN0YXVyYW50IERyZWllcmxlaSA8L2I+PGJyLz5WZW5sb2VyIFN0cmHDn2UgMTUzIDQxNDYyIE5ldXNzIDxici8+PGJyLz48Yj5UZWxlZm9uOjwvYj4gMDIxMzEvNTMzNDk2NiA8YnIvPjxlbT48YSBocmVmPWh0dHA6Ly93d3cuZHJlaWVybGVpLXJlc3RhdXJhbnQuZGUgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly93d3cuZHJlaWVybGVpLXJlc3RhdXJhbnQuZGU8L2VtPjxici8+" width="100%" style="border:none !important;" height="120"></iframe>`)[0];
+                popup_c4c1ca94fabdd0699ab1025f2da6252f.setContent(i_frame_1f70830ebdea2905948ac4694a945952);
+            
+        
+
+        marker_2fca5108ef1625740894c34ce0549dec.bindPopup(popup_c4c1ca94fabdd0699ab1025f2da6252f)
+        ;
+
+        
+    
+    
+            marker_2fca5108ef1625740894c34ce0549dec.bindTooltip(
+                `<div>
+                     Restaurant Dreierlei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
